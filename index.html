@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotation Ops — Daily Theme Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0E14; --panel:#12161F; --panel2:#181D29; --line:#232A38;
+  --ink:#DDE3EE; --dim:#8B93A7; --faint:#5A6274;
+  --green:#3FB68B; --red:#E5484D; --amber:#D8A03E; --blue:#5B9BD5;
+  --accent:#E8A33D; --cellg:#12301F; --cellr:#33171A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans Thai',sans-serif;font-size:14px;line-height:1.45;padding:12px;max-width:1100px;margin:0 auto}
+.mono{font-family:'IBM Plex Mono',monospace}
+h1{font-size:18px;color:var(--accent);font-weight:700}
+h2{font-size:15px;color:var(--accent);font-weight:600;margin-bottom:10px}
+.sub{color:var(--dim);font-size:12px;margin-top:2px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:14px}
+.flag{color:var(--red);font-size:12px;margin-top:6px}
+.pos{color:var(--green)} .neg{color:var(--red)} .neu{color:var(--dim)}
+
+/* ---- regime gate (signature element) ---- */
+#gate{display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-left:4px solid var(--faint)}
+#gate.on{border-left-color:var(--green)} #gate.off{border-left-color:var(--red)}
+#gate label{font-size:12px;color:var(--dim)}
+#gate select{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:5px 8px;font-family:inherit;font-size:13px}
+#gateMsg{flex-basis:100%;font-size:12.5px;color:var(--dim)}
+#gate.off #gateMsg{color:var(--red)}
+
+/* ---- alerts ---- */
+.alert{display:flex;gap:8px;padding:7px 10px;border-radius:7px;background:var(--panel2);margin-top:6px;font-size:13px;border-left:3px solid var(--amber)}
+.alert.sev{border-left-color:var(--red)}
+
+/* ---- tabs ---- */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tab{background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:16px;padding:4px 12px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.tab.act{background:var(--accent);color:#14100A;border-color:var(--accent);font-weight:600}
+
+/* ---- table ---- */
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:13px}
+th{color:var(--dim);font-weight:500;text-align:right;padding:6px 8px;font-size:12px;cursor:pointer;white-space:nowrap;user-select:none}
+th:first-child{text-align:left}
+td{padding:6px 8px;text-align:right;border-top:1px solid var(--line);white-space:nowrap}
+td:first-child{text-align:left}
+td.name{max-width:230px;overflow:hidden;text-overflow:ellipsis}
+.chip{font-size:10.5px;padding:1px 7px;border-radius:9px;margin-left:6px;font-weight:600;vertical-align:1px}
+.q-Leading{background:#173726;color:#6FD3A6}.q-Improving{background:#16283D;color:#7FB3E3}
+.q-Weakening{background:#3A2E14;color:#E0B95E}.q-Lagging{background:#3A1A1D;color:#EE8188}
+.q-null{background:#242A36;color:var(--faint)}
+.pin{cursor:pointer;color:var(--faint);margin-right:6px}
+.pin.on{color:var(--accent)}
+tr.pinned td{background:#161B12}
+td.hm{min-width:62px}
+
+/* ---- playbook ---- */
+.quads{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:700px){.quads{grid-template-columns:1fr}}
+.quad{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px;border-top:3px solid var(--faint)}
+.quad h3{font-size:13.5px;margin-bottom:2px}
+.quad .hint{font-size:11.5px;color:var(--dim);margin-bottom:8px}
+.quad.Leading{border-top-color:var(--green)}.quad.Improving{border-top-color:var(--blue)}
+.quad.Weakening{border-top-color:var(--amber)}.quad.Lagging{border-top-color:var(--red)}
+.qitem{display:flex;justify-content:space-between;gap:8px;padding:3px 0;font-size:13px;border-bottom:1px dashed var(--line)}
+.qitem:last-child{border-bottom:0}
+.qitem .b{color:var(--dim);font-size:12px}
+.gated .quad.Improving{opacity:.35;position:relative}
+.gated .quad.Improving::after{content:"GATE ปิด — สัญญาณเข้าใหม่ถูกพัก";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--red);font-weight:600;font-size:13px}
+
+/* ---- breadth bars ---- */
+.brow{display:grid;grid-template-columns:minmax(120px,1.3fr) 3fr 52px 56px;gap:8px;align-items:center;padding:4px 0;font-size:13px;border-top:1px solid var(--line)}
+.bar{height:8px;border-radius:4px;background:var(--panel2);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px}
+
+/* ---- rrg ---- */
+#rrgc{width:100%;height:420px;background:var(--panel2);border-radius:8px;touch-action:none}
+#rrgTip{font-size:12.5px;color:var(--dim);margin-top:6px;min-height:18px}
+footer{color:var(--faint);font-size:11.5px;margin:18px 0 30px;line-height:1.6}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⟳ Rotation Ops — Daily Theme Tracker</h1>
+  <div class="sub mono" id="meta">loading…</div>
+  <div class="flag" id="dq" hidden></div>
+</header>
+
+<!-- regime gate: manual weekly inputs from the Claude Project trackers -->
+<section class="panel" id="gate">
+  <label>Liquidity Gate
+    <select id="selLiq"><option>RISK-ON</option><option>NEUTRAL</option><option>RISK-OFF</option></select>
+  </label>
+  <label>Hartnett Flow
+    <select id="selHart"><option>RISK-ON</option><option>NEUTRAL</option><option>RISK-OFF</option></select>
+  </label>
+  <div id="gateMsg"></div>
+</section>
+
+<section class="panel" id="alertPanel" hidden>
+  <h2>⚠ Alerts — breadth เตือนก่อนราคา</h2>
+  <div id="alerts"></div>
+</section>
+
+<section class="panel">
+  <h2>Relative Rotation (weekly, เทียบ SPY)</h2>
+  <div class="tabs" id="rrgTabs">
+    <button class="tab act" data-f="theme">ธีม</button>
+    <button class="tab" data-f="sector_etf">Sector ETF</button>
+    <button class="tab" data-f="all">ทั้งหมด</button>
+    <button class="tab" data-f="pinned">ที่ปักหมุด</button>
+  </div>
+  <canvas id="rrgc"></canvas>
+  <div id="rrgTip">แตะจุดเพื่อดูชื่อธีม · จุดใหญ่ = สัปดาห์ล่าสุด · RRG คำนวณรายสัปดาห์เท่านั้น (รายวัน = noise)</div>
+</section>
+
+<section class="panel">
+  <h2>Heatmap ผลตอบแทนรายธีม (equal-weight)</h2>
+  <div class="tabs" id="sortTabs">
+    <button class="tab act" data-s="ret_1m">เรียงตาม 1M</button>
+    <button class="tab" data-s="ret_1w">1W</button>
+    <button class="tab" data-s="ret_1d">1D</button>
+    <button class="tab" data-s="rel_1m_spy">1M เทียบ SPY</button>
+  </div>
+  <div class="tblwrap"><table id="tbl">
+    <thead><tr>
+      <th>ธีม / Sector</th><th>1D%</th><th>1W%</th><th>1M%</th><th>3M%</th><th>1M vs SPY</th><th>B%</th><th>$Vol</th>
+    </tr></thead><tbody></tbody>
+  </table></div>
+  <div class="sub">★ = ปักหมุดธีมที่ถือ position · B% = สมาชิกเหนือ 20DMA · $Vol = dollar volume 5D/20D</div>
+</section>
+
+<section class="panel">
+  <h2>Momentum Playbook</h2>
+  <div class="quads" id="quads"></div>
+</section>
+
+<section class="panel">
+  <h2>Breadth &amp; Volume</h2>
+  <div id="breadth"></div>
+</section>
+
+<footer id="foot"></footer>
+
+<script>
+const LS = {liq:'rot.liq', hart:'rot.hart', pins:'rot.pins'};
+let D=null, H=[], pins=new Set(JSON.parse(localStorage.getItem(LS.pins)||'[]'));
+let rrgFilter='theme', sortKey='ret_1m';
+
+const fmt = v => v==null ? '—' : (v>0?'+':'')+v.toFixed(2);
+const cls = v => v==null ? 'neu' : v>0 ? 'pos' : v<0 ? 'neg' : 'neu';
+const heat = v => {
+  if(v==null) return '';
+  const a=Math.min(Math.abs(v)/15,1)*0.55+0.08;
+  return v>=0?`background:rgba(63,182,139,${a})`:`background:rgba(229,72,77,${a})`;
+};
+
+async function boot(){
+  try{
+    D = await (await fetch('data.json?'+Date.now())).json();
+  }catch(e){
+    document.getElementById('meta').textContent='ยังไม่มี data.json — รัน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
+    return;
+  }
+  try{ H = await (await fetch('history.json?'+Date.now())).json(); }catch(e){ H=[]; }
+
+  const b=D.benchmark_returns;
+  document.getElementById('meta').textContent =
+    `ข้อมูล ณ ${D.DATA_VERSION} · SPY 1D ${fmt(b['1D'])}% | 1M ${fmt(b['1M'])}% | 3M ${fmt(b['3M'])}% · SEED v${D.SEED_VERSION}`;
+
+  const dq=D.data_quality;
+  if(dq.failed_tickers.length||dq.themes_flagged_insufficient.length){
+    const el=document.getElementById('dq'); el.hidden=false;
+    el.textContent=`⚠ DATA QUALITY: fetch ไม่สำเร็จ ${dq.failed_tickers.length} ตัว [${dq.failed_tickers.join(', ')}]`
+      +(dq.themes_flagged_insufficient.length?` · ธีมข้อมูลไม่พอ: ${dq.themes_flagged_insufficient.join(', ')}`:'');
+  }
+
+  initGate(); renderAll();
+  document.getElementById('foot').innerHTML =
+    `generated ${D.generated_at_utc} · RRG = ${D.rrg_params.method}, window ${D.rrg_params.window_weeks}w · `
+    +`นี่คือกรอบวิเคราะห์ ไม่ใช่คำแนะนำซื้อขายรายตัว · การตัดสินใจเข้า/ออกอยู่ที่ liquidity gate + Hartnett flow (weekly) + Hull/tranche discipline เสมอ`;
+}
+
+/* ---------- regime gate ---------- */
+function initGate(){
+  const sl=document.getElementById('selLiq'), sh=document.getElementById('selHart');
+  sl.value=localStorage.getItem(LS.liq)||'NEUTRAL';
+  sh.value=localStorage.getItem(LS.hart)||'NEUTRAL';
+  const upd=()=>{
+    localStorage.setItem(LS.liq,sl.value); localStorage.setItem(LS.hart,sh.value);
+    const off = sl.value==='RISK-OFF'||sh.value==='RISK-OFF';
+    const on  = sl.value==='RISK-ON'&&sh.value==='RISK-ON';
+    const g=document.getElementById('gate');
+    g.className='panel '+(off?'off':on?'on':'');
+    document.getElementById('gateMsg').textContent = off
+      ? 'GATE ปิด — dashboard นี้ทำหน้าที่เฝ้าระวัง position เดิมเท่านั้น สัญญาณ Improving ทั้งหมดถูกพักจนกว่า gate รายสัปดาห์จะเปิด'
+      : on ? 'GATE เปิด — เล่นตาม playbook ได้ภายใต้ tranche discipline เดิม'
+           : 'GATE เป็นกลาง — เข้าได้เฉพาะ setup ที่ยืนยันครบทุกชั้น ขนาด tranche ระมัดระวัง';
+    document.getElementById('quads').parentElement.classList.toggle('gated', off);
+  };
+  sl.onchange=sh.onchange=upd; upd();
+}
+
+/* ---------- alerts ---------- */
+function renderAlerts(){
+  const out=[];
+  for(const t of D.themes){
+    if(t.insufficient_data) continue;
+    const b=t.breadth, b3=t.breadth_3d_ago;
+    const isPin=pins.has(t.name);
+    if(b!=null&&b3!=null){
+      if(b3>=50&&b<50) out.push({sev:isPin,txt:`${isPin?'★ ':''}${t.name}: breadth หลุด 50% ใน 3 วัน (${b3}% → ${b}%)`});
+      else if(b3-b>=25) out.push({sev:isPin,txt:`${isPin?'★ ':''}${t.name}: breadth ร่วง ${(b3-b).toFixed(0)}pts ใน 3 วัน (${b3}% → ${b}%)`});
+    }
+    if(t.ret_1w!=null&&t.ret_1w>0&&b!=null&&b<50)
+      out.push({sev:false,txt:`${t.name}: divergence — ราคา 1W ยังบวก (${fmt(t.ret_1w)}%) แต่ breadth เหลือ ${b}% (การกระจายตัวใต้ผิวน้ำ)`});
+  }
+  const panel=document.getElementById('alertPanel');
+  if(!out.length){panel.hidden=true;return}
+  panel.hidden=false;
+  document.getElementById('alerts').innerHTML =
+    out.slice(0,12).map(a=>`<div class="alert${a.sev?' sev':''}">${a.txt}</div>`).join('');
+}
+
+/* ---------- heatmap table ---------- */
+function renderTable(){
+  const rows=[...D.themes].sort((a,b)=>{
+    const pa=pins.has(a.name)?1:0, pb=pins.has(b.name)?1:0;
+    if(pa!==pb) return pb-pa;
+    return (b[sortKey]??-1e9)-(a[sortKey]??-1e9);
+  });
+  document.querySelector('#tbl tbody').innerHTML = rows.map(t=>{
+    const q=t.quadrant||'null';
+    return `<tr class="${pins.has(t.name)?'pinned':''}">
+      <td class="name"><span class="pin ${pins.has(t.name)?'on':''}" data-p="${t.name}">★</span>${t.name}
+        <span class="chip q-${q}">${t.quadrant||'n/a'}</span>${t.insufficient_data?' <span class="chip q-null">DATA!</span>':''}</td>
+      <td class="mono hm" style="${heat(t.ret_1d)}">${fmt(t.ret_1d)}</td>
+      <td class="mono hm" style="${heat(t.ret_1w)}">${fmt(t.ret_1w)}</td>
+      <td class="mono hm" style="${heat(t.ret_1m)}">${fmt(t.ret_1m)}</td>
+      <td class="mono hm" style="${heat(t.ret_3m)}">${fmt(t.ret_3m)}</td>
+      <td class="mono hm" style="${heat(t.rel_1m_spy)}">${fmt(t.rel_1m_spy)}</td>
+      <td class="mono ${t.breadth!=null&&t.breadth<30?'neg':t.breadth>=50?'pos':'neu'}">${t.breadth==null?'—':t.breadth+'%'}</td>
+      <td class="mono ${t.dollar_vol_ratio>1?'pos':'neu'}">${t.dollar_vol_ratio==null?'—':t.dollar_vol_ratio+'×'}</td>
+    </tr>`;
+  }).join('');
+  document.querySelectorAll('.pin').forEach(el=>el.onclick=()=>{
+    const n=el.dataset.p;
+    pins.has(n)?pins.delete(n):pins.add(n);
+    localStorage.setItem(LS.pins,JSON.stringify([...pins]));
+    renderAll();
+  });
+}
+
+/* ---------- playbook ---------- */
+const QINFO={
+  Leading:['ถือต่อ / เล่นโมเมนตัม','แข็งกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโค้งลงใกล้ 100 เตรียมแผนออก'],
+  Improving:['จุดเข้าเมื่อ gate เปิด','โมเมนตัมกลับทิศแต่ราคายังไม่แพง — ต้องมี breadth ฟื้น + ยืนยันราคา ห้ามเข้าจาก quadrant อย่างเดียว'],
+  Weakening:['ทยอยขาย ห้ามเพิ่มไม้','ผลตอบแทนสะสมยังสวยแต่แรงส่งแผ่ว — โซนติดดอยคลาสสิก'],
+  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนี้ส่วนใหญ่คือ dead cat bounce สนใจเมื่อข้ามไป Improving เท่านั้น'],
+};
+function renderQuads(){
+  const g={Leading:[],Improving:[],Weakening:[],Lagging:[]};
+  for(const t of D.themes) if(t.quadrant&&g[t.quadrant]) g[t.quadrant].push(t);
+  for(const k in g) g[k].sort((a,b)=>(b.rel_1m_spy??-1e9)-(a.rel_1m_spy??-1e9));
+  document.getElementById('quads').innerHTML = Object.entries(g).map(([k,arr])=>`
+    <div class="quad ${k}">
+      <h3>${k} — ${QINFO[k][0]}</h3><div class="hint">${QINFO[k][1]}</div>
+      ${arr.map(t=>`<div class="qitem"><span>${pins.has(t.name)?'★ ':''}${t.name}</span>
+        <span class="mono"><span class="${cls(t.rel_1m_spy)}">${fmt(t.rel_1m_spy)}%</span>
+        <span class="b"> B ${t.breadth==null?'—':t.breadth+'%'}</span></span></div>`).join('')||'<div class="qitem neu">—</div>'}
+    </div>`).join('');
+}
+
+/* ---------- breadth panel ---------- */
+function renderBreadth(){
+  const rows=[...D.themes].filter(t=>t.breadth!=null||t.dollar_vol_ratio!=null)
+    .sort((a,b)=>(b.breadth??-1)-(a.breadth??-1));
+  document.getElementById('breadth').innerHTML =
+    `<div class="brow" style="border-top:0;color:var(--dim);font-size:12px"><span>ธีม</span><span>% เหนือ 20DMA</span><span style="text-align:right">B%</span><span style="text-align:right">$Vol</span></div>`
+    + rows.map(t=>{
+      const b=t.breadth??0;
+      const c=b>=50?'var(--green)':b>=30?'var(--amber)':'var(--red)';
+      return `<div class="brow"><span>${pins.has(t.name)?'★ ':''}${t.name}</span>
+        <span class="bar"><i style="width:${b}%;background:${c}"></i></span>
+        <span class="mono" style="text-align:right;color:${c}">${t.breadth==null?'—':b+'%'}</span>
+        <span class="mono ${t.dollar_vol_ratio>1?'pos':'neu'}" style="text-align:right">${t.dollar_vol_ratio==null?'—':t.dollar_vol_ratio+'×'}</span></div>`;
+    }).join('');
+}
+
+/* ---------- RRG canvas ---------- */
+const QC={Leading:'#3FB68B',Improving:'#5B9BD5',Weakening:'#D8A03E',Lagging:'#E5484D'};
+let rrgPts=[];
+function renderRRG(){
+  const c=document.getElementById('rrgc'), dpr=devicePixelRatio||1;
+  const W=c.clientWidth, Hh=420;
+  c.width=W*dpr; c.height=Hh*dpr; c.style.height=Hh+'px';
+  const x=c.getContext('2d'); x.scale(dpr,dpr);
+
+  const names=Object.keys(D.rrg).filter(n=>{
+    const t=D.themes.find(t=>t.name===n); if(!t) return false;
+    if(rrgFilter==='pinned') return pins.has(n);
+    if(rrgFilter==='all') return true;
+    return t.type===rrgFilter;
+  });
+  let mn=95,mx=105;
+  for(const n of names) for(const [a,b] of D.rrg[n]){mn=Math.min(mn,a,b);mx=Math.max(mx,a,b);}
+  mn=Math.floor(mn-1); mx=Math.ceil(mx+1);
+  const pad=30, sx=v=>pad+(v-mn)/(mx-mn)*(W-pad-10), sy=v=>Hh-pad-(v-mn)/(mx-mn)*(Hh-pad-14);
+
+  // quadrant fills
+  const cx=sx(100), cy=sy(100);
+  x.fillStyle='rgba(63,182,139,.06)'; x.fillRect(cx,14,W-10-cx,cy-14);
+  x.fillStyle='rgba(91,155,213,.06)'; x.fillRect(pad,14,cx-pad,cy-14);
+  x.fillStyle='rgba(216,160,62,.05)'; x.fillRect(cx,cy,W-10-cx,Hh-pad-cy);
+  x.fillStyle='rgba(229,72,77,.06)';  x.fillRect(pad,cy,cx-pad,Hh-pad-cy);
+  x.strokeStyle='#2A3242'; x.beginPath(); x.moveTo(cx,14);x.lineTo(cx,Hh-pad); x.moveTo(pad,cy);x.lineTo(W-10,cy); x.stroke();
+  x.fillStyle='#5A6274'; x.font='11px IBM Plex Mono';
+  x.fillText('IMPROVING',pad+4,24); x.fillText('LEADING',W-80,24);
+  x.fillText('LAGGING',pad+4,Hh-pad-6); x.fillText('WEAKENING',W-100,Hh-pad-6);
+
+  rrgPts=[];
+  for(const n of names){
+    const tr=D.rrg[n], t=D.themes.find(t=>t.name===n);
+    const col=QC[t.quadrant]||'#5A6274';
+    x.strokeStyle=col; x.globalAlpha=.5; x.lineWidth=1; x.beginPath();
+    tr.forEach(([a,b],i)=> i?x.lineTo(sx(a),sy(b)):x.moveTo(sx(a),sy(b)));
+    x.stroke(); x.globalAlpha=1;
+    tr.forEach(([a,b],i)=>{
+      const last=i===tr.length-1, r=last?(pins.has(n)?7:5.5):1.8;
+      x.fillStyle=col; x.beginPath(); x.arc(sx(a),sy(b),r,0,7); x.fill();
+      if(last){
+        if(pins.has(n)){x.strokeStyle='#E8A33D';x.lineWidth=1.5;x.stroke();}
+        rrgPts.push({x:sx(a),y:sy(b),n,q:t.quadrant,a,b});
+      }
+    });
+  }
+  c.onclick=ev=>{
+    const r=c.getBoundingClientRect(), px=ev.clientX-r.left, py=ev.clientY-r.top;
+    let best=null,bd=1e9;
+    for(const p of rrgPts){const d=(p.x-px)**2+(p.y-py)**2; if(d<bd){bd=d;best=p;}}
+    if(best&&bd<900) document.getElementById('rrgTip').innerHTML=
+      `<b style="color:${QC[best.q]||'#888'}">${best.n}</b> · ${best.q} · RS-Ratio ${best.a} / RS-Mom ${best.b} (mono approx.)`;
+  };
+}
+
+function renderAll(){renderAlerts();renderTable();renderQuads();renderBreadth();renderRRG();}
+
+document.getElementById('rrgTabs').onclick=e=>{
+  if(!e.target.dataset.f)return;
+  rrgFilter=e.target.dataset.f;
+  document.querySelectorAll('#rrgTabs .tab').forEach(t=>t.classList.toggle('act',t===e.target));
+  renderRRG();
+};
+document.getElementById('sortTabs').onclick=e=>{
+  if(!e.target.dataset.s)return;
+  sortKey=e.target.dataset.s;
+  document.querySelectorAll('#sortTabs .tab').forEach(t=>t.classList.toggle('act',t===e.target));
+  renderTable();
+};
+addEventListener('resize',()=>D&&renderRRG());
+boot();
+</script>
+</body>
+</html>
