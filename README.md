@@ -1,1 +1,0 @@
-# Sector-rotation-with-hartnett-
