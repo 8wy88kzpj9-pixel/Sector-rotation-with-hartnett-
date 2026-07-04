@@ -39,12 +39,22 @@ h2{font-size:15px;color:var(--accent);font-weight:600;margin-bottom:10px}
 .tab.act{background:#26241C;color:#F5F0E3;border-color:#26241C;font-weight:600}
 
 .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{border-collapse:collapse;width:100%;min-width:640px;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:13px}
 th{color:var(--dim);font-weight:500;text-align:right;padding:6px 8px;font-size:12px;cursor:pointer;white-space:nowrap;user-select:none}
 th:first-child{text-align:left}
 td{padding:6px 8px;text-align:right;border-top:1px solid var(--line);white-space:nowrap}
 td:first-child{text-align:left}
 td.name{max-width:230px;overflow:hidden;text-overflow:ellipsis}
+/* compact mode: ทั้งตารางลงจอมือถือโดยไม่ต้องเลื่อนข้าง */
+@media(max-width:760px){
+  table{font-size:10.5px}
+  th,td{padding:4px 2.5px}
+  th{font-size:9px;white-space:normal;line-height:1.15}
+  td.name{max-width:104px;white-space:normal;line-height:1.25;overflow:visible}
+  .chip{font-size:7.5px;padding:0 4px;margin-left:2px}
+  .pin{margin-right:2px}
+  td.hm{min-width:0}
+}
 .chip{font-size:10.5px;padding:1px 7px;border-radius:9px;margin-left:6px;font-weight:600;vertical-align:1px}
 .q-Leading{background:#DCE9D8;color:#1E8A4C}.q-Improving{background:#DCE4F0;color:#3D6FA8}
 .q-Weakening{background:#F0E6CC;color:#B07C1E}.q-Lagging{background:#F3D9D6;color:#D9365E}
@@ -161,7 +171,7 @@ async function boot(){
   try{
     D = await (await fetch('data.json?'+Date.now())).json();
   }catch(e){
-    document.getElementById('meta').textContent='ยังไม่มี data.json — รัน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
+    document.getElementById('meta').textContent='ยังไม่มี data.json — รน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
     return;
   }
   try{ H = await (await fetch('history.json?'+Date.now())).json(); }catch(e){ H=[]; }
@@ -173,14 +183,14 @@ async function boot(){
   const dq=D.data_quality;
   if(dq.failed_tickers.length||dq.themes_flagged_insufficient.length){
     const el=document.getElementById('dq'); el.hidden=false;
-    el.textContent=`⚠ DATA QUALITY: fetch ไม่สำเรจ ${dq.failed_tickers.length} ตัว [${dq.failed_tickers.join(', ')}]`
+    el.textContent=`⚠ DATA QUALITY: fetch ไม่สำเร็จ ${dq.failed_tickers.length} ตัว [${dq.failed_tickers.join(', ')}]`
       +(dq.themes_flagged_insufficient.length?` · ธีมข้อมูลไม่พอ: ${dq.themes_flagged_insufficient.join(', ')}`:'');
   }
 
   initGate(); renderAll();
   document.getElementById('foot').innerHTML =
     `generated ${D.generated_at_utc} · RRG = ${D.rrg_params.method}, window ${D.rrg_params.window_weeks}w · `
-    +`นี่คือกรอบวิเคราะห์ ไม่ใช่คำแนะนำซื้อขายรายตัว · การตัดสนใจเข้า/ออกอยู่ที่ liquidity gate + Hartnett flow (weekly) + Hull/tranche discipline เสมอ`;
+    +`นีคือกรอบวิเคราะห ไม่ใช่คำแนะนำซื้อขายรายตัว · การตัดสินใจเข้า/ออกอยู่ที่ liquidity gate + Hartnett flow (weekly) + Hull/tranche discipline เสมอ`;
 }
 
 function initGate(){
@@ -194,9 +204,9 @@ function initGate(){
     const g=document.getElementById('gate');
     g.className='panel '+(off?'off':on?'on':'');
     document.getElementById('gateMsg').textContent = off
-      ? 'GATE ปิด — dashboard นี้ทำหน้าทีเฝ้าระวัง position เดิมเท่านั้น สัญญาณ Improving ทั้งหมดถูกพักจนกว่า gate รายสัปดาห์จะเปิด'
+      ? 'GATE ปิด — dashboard นี้ทำหน้าที่เฝ้าระวัง position เดิมเท่านั้น สัญญาณ Improving ทงหมดถูกพักจนกว่า gate รายสัปดาห์จะเปิด'
       : on ? 'GATE เปิด — เล่นตาม playbook ได้ภายใต้ tranche discipline เดิม'
-           : 'GATE เป็นกลาง — เข้าได้เฉพาะ setup ที่ยืนยันครบทุกชั้น ขนาด tranche ระมัดระวัง';
+           : 'GATE เป็นกลาง — เข้าได้เฉพาะ setup ที่ยืนยันครบทกชั้น ขนาด tranche ระมัดระวัง';
     document.getElementById('quads').parentElement.classList.toggle('gated', off);
   };
   sl.onchange=sh.onchange=upd; upd();
@@ -251,10 +261,10 @@ function renderTable(){
 }
 
 const QINFO={
-  Leading:['ถือต่อ / เล่นโมเมนตัม','แข็งกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโค้งลงใกล้ 100 เตรียมแผนออก'],
-  Improving:['จุดเข้าเมื่อ gate เปิด','โมเมนตัมกลับทิศแต่ราคายังไม่แพง — ต้องมี breadth ฟื้น + ยืนยันราคา ห้ามเข้าจาก quadrant อย่างเดียว'],
+  Leading:['ถือต่อ / เล่นโมเมนตม','แข็งกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโคงลงใกล้ 100 เตรียมแผนออก'],
+  Improving:['จดเข้าเมื่อ gate เปิด','โมเมนตัมกลับทิศแต่ราคายงไม่แพง — ต้องมี breadth ฟน + ยืนยันราคา ห้ามเข้าจาก quadrant อย่างเดียว'],
   Weakening:['ทยอยขาย ห้ามเพิ่มไม้','ผลตอบแทนสะสมยังสวยแต่แรงส่งแผ่ว — โซนติดดอยคลาสสิก'],
-  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนี้ส่วนใหญ่คือ dead cat bounce สนใจเมื่อข้ามไป Improving เท่านั้น'],
+  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนส่วนใหญ่คือ dead cat bounce สนใจเมื่อขามไป Improving เท่านั้น'],
 };
 function renderQuads(){
   const g={Leading:[],Improving:[],Weakening:[],Lagging:[]};
