@@ -47,11 +47,11 @@ td:first-child{text-align:left}
 td.name{max-width:230px;overflow:hidden;text-overflow:ellipsis}
 /* compact mode: ทั้งตารางลงจอมือถือโดยไม่ต้องเลื่อนข้าง */
 @media(max-width:760px){
-  table{font-size:10.5px}
-  th,td{padding:4px 2.5px}
-  th{font-size:9px;white-space:normal;line-height:1.15}
-  td.name{max-width:104px;white-space:normal;line-height:1.25;overflow:visible}
-  .chip{font-size:7.5px;padding:0 4px;margin-left:2px}
+  table{font-size:10px}
+  th,td{padding:3px 1.5px}
+  th{font-size:8.5px;white-space:normal;line-height:1.1}
+  td.name{max-width:92px;white-space:normal;line-height:1.2;overflow:visible;font-size:10.5px}
+  .chip{font-size:7px;padding:0 3px;margin-left:0;display:block;width:fit-content;margin-top:1px}
   .pin{margin-right:2px}
   td.hm{min-width:0}
 }
@@ -161,6 +161,7 @@ let rrgFilter='theme', sortKey='ret_1m';
 
 const fmt = v => v==null ? '—' : (v>0?'+':'')+v.toFixed(2);
 const cls = v => v==null ? 'neu' : v>0 ? 'pos' : v<0 ? 'neg' : 'neu';
+const fmtT = v => v==null ? '—' : (v>0?'+':'')+v.toFixed(1);
 const heat = v => {
   if(v==null) return '';
   const a=Math.min(Math.abs(v)/15,1)*0.38+0.07;
@@ -171,7 +172,7 @@ async function boot(){
   try{
     D = await (await fetch('data.json?'+Date.now())).json();
   }catch(e){
-    document.getElementById('meta').textContent='ยังไม่มี data.json — รน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
+    document.getElementById('meta').textContent='ยังไม่มี data.json — รัน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
     return;
   }
   try{ H = await (await fetch('history.json?'+Date.now())).json(); }catch(e){ H=[]; }
@@ -190,7 +191,7 @@ async function boot(){
   initGate(); renderAll();
   document.getElementById('foot').innerHTML =
     `generated ${D.generated_at_utc} · RRG = ${D.rrg_params.method}, window ${D.rrg_params.window_weeks}w · `
-    +`นีคือกรอบวิเคราะห ไม่ใช่คำแนะนำซื้อขายรายตัว · การตัดสินใจเข้า/ออกอยู่ที่ liquidity gate + Hartnett flow (weekly) + Hull/tranche discipline เสมอ`;
+    +`นี่คือกรอบวิเคราะห์ ไม่ใช่คำแนะนำซื้อขายรายตัว · การตัดสินใจเข้า/ออกอยู่ที่ liquidity gate + Hartnett flow (weekly) + Hull/tranche discipline เสมอ`;
 }
 
 function initGate(){
@@ -204,9 +205,9 @@ function initGate(){
     const g=document.getElementById('gate');
     g.className='panel '+(off?'off':on?'on':'');
     document.getElementById('gateMsg').textContent = off
-      ? 'GATE ปิด — dashboard นี้ทำหน้าที่เฝ้าระวัง position เดิมเท่านั้น สัญญาณ Improving ทงหมดถูกพักจนกว่า gate รายสัปดาห์จะเปิด'
+      ? 'GATE ปิด — dashboard นี้ทำหน้าที่เฝ้าระวัง position เดิมเท่านั้น สัญญาณ Improving ทั้งหมดถูกพักจนกว่า gate รายสัปดาห์จะเปิด'
       : on ? 'GATE เปิด — เล่นตาม playbook ได้ภายใต้ tranche discipline เดิม'
-           : 'GATE เป็นกลาง — เข้าได้เฉพาะ setup ที่ยืนยันครบทกชั้น ขนาด tranche ระมัดระวัง';
+           : 'GATE เป็นกลาง — เข้าได้เฉพาะ setup ที่ยืนยันครบทุกชั้น ขนาด tranche ระมัดระวัง';
     document.getElementById('quads').parentElement.classList.toggle('gated', off);
   };
   sl.onchange=sh.onchange=upd; upd();
@@ -243,12 +244,12 @@ function renderTable(){
     return `<tr class="${pins.has(t.name)?'pinned':''}">
       <td class="name"><span class="pin ${pins.has(t.name)?'on':''}" data-p="${t.name}">★</span>${t.name}
         <span class="chip q-${q}">${t.quadrant||'n/a'}</span>${t.insufficient_data?' <span class="chip q-null">DATA!</span>':''}</td>
-      <td class="mono hm" style="${heat(t.ret_1d)}">${fmt(t.ret_1d)}</td>
-      <td class="mono hm" style="${heat(t.ret_1w)}">${fmt(t.ret_1w)}</td>
-      <td class="mono hm" style="${heat(t.ret_1m)}">${fmt(t.ret_1m)}</td>
-      <td class="mono hm" style="${heat(t.ret_3m)}">${fmt(t.ret_3m)}</td>
-      <td class="mono hm" style="${heat(t.rel_1m_spy)}">${fmt(t.rel_1m_spy)}</td>
-      <td class="mono ${t.type==='sector_etf'?'neu':t.breadth!=null&&t.breadth<30?'neg':t.breadth>=50?'pos':'neu'}">${t.type==='sector_etf'?'ETF':t.breadth==null?'—':t.breadth+'%'}</td>
+      <td class="mono hm" style="${heat(t.ret_1d)}">${fmtT(t.ret_1d)}</td>
+      <td class="mono hm" style="${heat(t.ret_1w)}">${fmtT(t.ret_1w)}</td>
+      <td class="mono hm" style="${heat(t.ret_1m)}">${fmtT(t.ret_1m)}</td>
+      <td class="mono hm" style="${heat(t.ret_3m)}">${fmtT(t.ret_3m)}</td>
+      <td class="mono hm" style="${heat(t.rel_1m_spy)}">${fmtT(t.rel_1m_spy)}</td>
+      <td class="mono ${t.type==='sector_etf'?'neu':t.breadth!=null&&t.breadth<30?'neg':t.breadth>=50?'pos':'neu'}">${t.type==='sector_etf'?'ETF':t.breadth==null?'—':Math.round(t.breadth)+'%'}</td>
       <td class="mono ${t.dollar_vol_ratio>1?'pos':'neu'}">${t.dollar_vol_ratio==null?'—':t.dollar_vol_ratio+'×'}</td>
     </tr>`;
   }).join('');
@@ -261,10 +262,10 @@ function renderTable(){
 }
 
 const QINFO={
-  Leading:['ถือต่อ / เล่นโมเมนตม','แข็งกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโคงลงใกล้ 100 เตรียมแผนออก'],
-  Improving:['จดเข้าเมื่อ gate เปิด','โมเมนตัมกลับทิศแต่ราคายงไม่แพง — ต้องมี breadth ฟน + ยืนยันราคา ห้ามเข้าจาก quadrant อย่างเดียว'],
+  Leading:['ถือต่อ / เล่นโมเมนตัม','แข็งกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโค้งลงใกล้ 100 เตรียมแผนออก'],
+  Improving:['จุดเข้าเมื่อ gate เปิด','โมเมนตัมกลับทิศแต่ราคายังไม่แพง — ต้องมี breadth ฟื้น + ยืนยันราคา ห้ามเข้าจาก quadrant อย่างเดียว'],
   Weakening:['ทยอยขาย ห้ามเพิ่มไม้','ผลตอบแทนสะสมยังสวยแต่แรงส่งแผ่ว — โซนติดดอยคลาสสิก'],
-  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนส่วนใหญ่คือ dead cat bounce สนใจเมื่อขามไป Improving เท่านั้น'],
+  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนี้ส่วนใหญ่คือ dead cat bounce สนใจเมื่อข้ามไป Improving เท่านั้น'],
 };
 function renderQuads(){
   const g={Leading:[],Improving:[],Weakening:[],Lagging:[]};
