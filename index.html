@@ -50,9 +50,8 @@ td.name{max-width:230px;overflow:hidden;text-overflow:ellipsis}
   table{font-size:10px}
   th,td{padding:3px 1.5px}
   th{font-size:8.5px;white-space:normal;line-height:1.1}
-  td.name{max-width:92px;  th:first-child,td.name{width:99%}
+  th:first-child,td.name{width:99%}
   td.name{max-width:none;min-width:88px;white-space:normal;line-height:1.2;overflow:visible;font-size:10.5px}
-}
   .chip{font-size:7px;padding:0 3px;margin-left:0;display:block;width:fit-content;margin-top:1px}
   .pin{margin-right:2px}
   td.hm{min-width:0}
@@ -174,7 +173,7 @@ async function boot(){
   try{
     D = await (await fetch('data.json?'+Date.now())).json();
   }catch(e){
-    document.getElementById('meta').textContent='ยังไม่มี data.json — รัน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
+    document.getElementById('meta').textContent='ยังไม่มี data.json — รน workflow ครั้งแรกก่อน (Actions → Daily data update → Run workflow)';
     return;
   }
   try{ H = await (await fetch('history.json?'+Date.now())).json(); }catch(e){ H=[]; }
@@ -208,7 +207,7 @@ function initGate(){
     g.className='panel '+(off?'off':on?'on':'');
     document.getElementById('gateMsg').textContent = off
       ? 'GATE ปิด — dashboard นี้ทำหน้าที่เฝ้าระวัง position เดิมเท่านั้น สัญญาณ Improving ทั้งหมดถูกพักจนกว่า gate รายสัปดาห์จะเปิด'
-      : on ? 'GATE เปิด — เล่นตาม playbook ได้ภายใต้ tranche discipline เดิม'
+      : on ? 'GATE เปิด — เลนตาม playbook ได้ภายใต้ tranche discipline เดิม'
            : 'GATE เป็นกลาง — เข้าได้เฉพาะ setup ที่ยืนยันครบทุกชั้น ขนาด tranche ระมัดระวัง';
     document.getElementById('quads').parentElement.classList.toggle('gated', off);
   };
@@ -264,10 +263,10 @@ function renderTable(){
 }
 
 const QINFO={
-  Leading:['ถือต่อ / เล่นโมเมนตัม','แข็งกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโค้งลงใกล้ 100 เตรียมแผนออก'],
+  Leading:['ถือต่อ / เล่นโมเมนตัม','แขงกว่าตลาดและยังแรงขึ้น — ดู RS-Momentum ประกอบ ถ้าโค้งลงใกล้ 100 เตรียมแผนออก'],
   Improving:['จุดเข้าเมื่อ gate เปิด','โมเมนตัมกลับทิศแต่ราคายังไม่แพง — ต้องมี breadth ฟื้น + ยืนยันราคา ห้ามเข้าจาก quadrant อย่างเดียว'],
   Weakening:['ทยอยขาย ห้ามเพิ่มไม้','ผลตอบแทนสะสมยังสวยแต่แรงส่งแผ่ว — โซนติดดอยคลาสสิก'],
-  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนี้ส่วนใหญ่คือ dead cat bounce สนใจเมื่อข้ามไป Improving เท่านั้น'],
+  Lagging:['ห้ามรีบช้อน','เด้งรายสัปดาห์ในโซนนี้สวนใหญ่คือ dead cat bounce สนใจเมื่อข้ามไป Improving เท่านั้น'],
 };
 function renderQuads(){
   const g={Leading:[],Improving:[],Weakening:[],Lagging:[]};
