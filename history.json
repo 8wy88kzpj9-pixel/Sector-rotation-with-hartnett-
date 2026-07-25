@@ -2150,7 +2150,7 @@
    },
    "Semi Equip & Memory": {
     "breadth": 28.6,
-    "ret_1d": 1.16
+    "ret_1d": 1.17
    },
    "Software": {
     "breadth": 11.1,
@@ -2158,15 +2158,15 @@
    },
    "Mag 7": {
     "breadth": 28.6,
-    "ret_1d": -5.07
+    "ret_1d": -5.03
    },
    "Cybersecurity": {
     "breadth": 0.0,
-    "ret_1d": -2.19
+    "ret_1d": -2.18
    },
    "Genomics": {
     "breadth": 12.5,
-    "ret_1d": -0.13
+    "ret_1d": -0.16
    },
    "Biotech Large": {
     "breadth": 40.0,
@@ -2174,7 +2174,7 @@
    },
    "Pharma & Managed Care": {
     "breadth": 66.7,
-    "ret_1d": 1.24
+    "ret_1d": 1.25
    },
    "Defense": {
     "breadth": 100.0,
@@ -2198,7 +2198,7 @@
    },
    "Materials": {
     "breadth": 40.0,
-    "ret_1d": -0.56
+    "ret_1d": -0.55
    },
    "Copper": {
     "breadth": 100.0,
@@ -2214,7 +2214,7 @@
    },
    "Nuclear & Uranium": {
     "breadth": 20.0,
-    "ret_1d": -0.8
+    "ret_1d": -0.83
    },
    "Gold Miners": {
     "breadth": 50.0,
@@ -2222,15 +2222,15 @@
    },
    "Solar": {
     "breadth": 0.0,
-    "ret_1d": -2.12
+    "ret_1d": -2.1
    },
    "Crypto-linked": {
     "breadth": 60.0,
-    "ret_1d": -0.35
+    "ret_1d": -0.31
    },
    "Space & Drones": {
     "breadth": 40.0,
-    "ret_1d": -0.11
+    "ret_1d": -0.16
    },
    "China Tech ADR": {
     "breadth": 80.0,
