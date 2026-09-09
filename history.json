@@ -6430,7 +6430,7 @@
   "themes": {
    "Semiconductors": {
     "breadth": 62.5,
-    "ret_1d": 3.6
+    "ret_1d": 3.64
    },
    "Semi Equip & Memory": {
     "breadth": 28.6,
@@ -6438,23 +6438,23 @@
    },
    "Software": {
     "breadth": 44.4,
-    "ret_1d": -2.97
+    "ret_1d": -2.99
    },
    "Mag 7": {
     "breadth": 71.4,
-    "ret_1d": -1.34
+    "ret_1d": -1.32
    },
    "Cybersecurity": {
     "breadth": 40.0,
-    "ret_1d": -0.59
+    "ret_1d": -0.58
    },
    "Genomics": {
     "breadth": 75.0,
-    "ret_1d": 0.18
+    "ret_1d": 0.1
    },
    "Biotech Large": {
     "breadth": 100.0,
-    "ret_1d": -1.43
+    "ret_1d": -1.45
    },
    "Pharma & Managed Care": {
     "breadth": 66.7,
@@ -6466,7 +6466,7 @@
    },
    "Energy": {
     "breadth": 60.0,
-    "ret_1d": -0.88
+    "ret_1d": -0.87
    },
    "Banks & Brokers": {
     "breadth": 100.0,
@@ -6474,11 +6474,11 @@
    },
    "Staples": {
     "breadth": 20.0,
-    "ret_1d": -0.81
+    "ret_1d": -0.82
    },
    "Utilities & Power": {
     "breadth": 40.0,
-    "ret_1d": 1.16
+    "ret_1d": 1.13
    },
    "Materials": {
     "breadth": 40.0,
@@ -6490,31 +6490,31 @@
    },
    "AI Infra & Data Center": {
     "breadth": 50.0,
-    "ret_1d": 2.19
+    "ret_1d": 2.2
    },
    "Quantum": {
     "breadth": 0.0,
-    "ret_1d": -0.27
+    "ret_1d": -0.09
    },
    "Nuclear & Uranium": {
     "breadth": 40.0,
-    "ret_1d": 0.98
+    "ret_1d": 0.86
    },
    "Gold Miners": {
     "breadth": 100.0,
-    "ret_1d": 1.4
+    "ret_1d": 1.7
    },
    "Solar": {
     "breadth": 0.0,
-    "ret_1d": -0.06
+    "ret_1d": -0.05
    },
    "Crypto-linked": {
     "breadth": 100.0,
-    "ret_1d": -0.51
+    "ret_1d": -0.49
    },
    "Space & Drones": {
     "breadth": 0.0,
-    "ret_1d": 0.17
+    "ret_1d": 0.18
    },
    "China Tech ADR": {
     "breadth": 40.0,
@@ -6526,7 +6526,7 @@
    },
    "Travel & Airlines": {
     "breadth": 0.0,
-    "ret_1d": 0.4
+    "ret_1d": 0.38
    },
    "Fintech & Payments": {
     "breadth": 40.0,
