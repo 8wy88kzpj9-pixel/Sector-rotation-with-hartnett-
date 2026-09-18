@@ -7495,5 +7495,158 @@
     "ret_1d": -0.29
    }
   }
+ },
+ {
+  "date": "2026-09-16",
+  "themes": {
+   "Semiconductors": {
+    "breadth": 50.0,
+    "ret_1d": 1.91
+   },
+   "Semi Equip & Memory": {
+    "breadth": 0.0,
+    "ret_1d": 0.42
+   },
+   "Software": {
+    "breadth": 22.2,
+    "ret_1d": -0.08
+   },
+   "Mag 7": {
+    "breadth": 57.1,
+    "ret_1d": -0.13
+   },
+   "Cybersecurity": {
+    "breadth": 100.0,
+    "ret_1d": -0.51
+   },
+   "Genomics": {
+    "breadth": 25.0,
+    "ret_1d": 2.03
+   },
+   "Biotech Large": {
+    "breadth": 20.0,
+    "ret_1d": 0.18
+   },
+   "Pharma & Managed Care": {
+    "breadth": 16.7,
+    "ret_1d": 0.09
+   },
+   "Defense": {
+    "breadth": 0.0,
+    "ret_1d": 0.44
+   },
+   "Energy": {
+    "breadth": 40.0,
+    "ret_1d": -4.31
+   },
+   "Banks & Brokers": {
+    "breadth": 0.0,
+    "ret_1d": -2.53
+   },
+   "Staples": {
+    "breadth": 40.0,
+    "ret_1d": -0.62
+   },
+   "Utilities & Power": {
+    "breadth": 0.0,
+    "ret_1d": -0.31
+   },
+   "Materials": {
+    "breadth": 20.0,
+    "ret_1d": -0.1
+   },
+   "Copper": {
+    "breadth": 0.0,
+    "ret_1d": -0.07
+   },
+   "AI Infra & Data Center": {
+    "breadth": 33.3,
+    "ret_1d": 2.57
+   },
+   "Quantum": {
+    "breadth": 0.0,
+    "ret_1d": -1.17
+   },
+   "Nuclear & Uranium": {
+    "breadth": 0.0,
+    "ret_1d": -1.07
+   },
+   "Gold Miners": {
+    "breadth": 25.0,
+    "ret_1d": -1.07
+   },
+   "Solar": {
+    "breadth": 0.0,
+    "ret_1d": -3.27
+   },
+   "Crypto-linked": {
+    "breadth": 0.0,
+    "ret_1d": -1.27
+   },
+   "Space & Drones": {
+    "breadth": 20.0,
+    "ret_1d": 0.26
+   },
+   "China Tech ADR": {
+    "breadth": 0.0,
+    "ret_1d": -1.19
+   },
+   "Homebuilders": {
+    "breadth": 0.0,
+    "ret_1d": -1.44
+   },
+   "Travel & Airlines": {
+    "breadth": 0.0,
+    "ret_1d": -0.33
+   },
+   "Fintech & Payments": {
+    "breadth": 0.0,
+    "ret_1d": -1.97
+   },
+   "Health Care (XLV)": {
+    "breadth": 0.0,
+    "ret_1d": 0.07
+   },
+   "Financials (XLF)": {
+    "breadth": 0.0,
+    "ret_1d": -1.62
+   },
+   "Industrials (XLI)": {
+    "breadth": 0.0,
+    "ret_1d": -0.08
+   },
+   "Utilities (XLU)": {
+    "breadth": 0.0,
+    "ret_1d": 0.0
+   },
+   "Staples (XLP)": {
+    "breadth": 0.0,
+    "ret_1d": -0.48
+   },
+   "Real Estate (XLRE)": {
+    "breadth": 0.0,
+    "ret_1d": -0.6
+   },
+   "Materials (XLB)": {
+    "breadth": 0.0,
+    "ret_1d": -0.73
+   },
+   "Cons Discret (XLY)": {
+    "breadth": 0.0,
+    "ret_1d": -0.63
+   },
+   "Comm Svcs (XLC)": {
+    "breadth": 100.0,
+    "ret_1d": -0.9
+   },
+   "Energy (XLE)": {
+    "breadth": 0.0,
+    "ret_1d": -2.88
+   },
+   "Tech (XLK)": {
+    "breadth": 0.0,
+    "ret_1d": 0.1
+   }
+  }
  }
 ]
