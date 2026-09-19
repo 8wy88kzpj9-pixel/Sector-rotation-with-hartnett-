@@ -1,13 +1,13 @@
 {
  "SEED_VERSION": "1.0.0",
- "DATA_VERSION": "2026-09-16",
- "generated_at_utc": "2026-09-18T00:38:20+00:00",
+ "DATA_VERSION": "2026-09-17",
+ "generated_at_utc": "2026-09-19T00:30:00+00:00",
  "benchmark": "SPY",
  "benchmark_returns": {
-  "1D": -0.44,
-  "1W": -1.1,
-  "1M": -2.41,
-  "3M": 0.75
+  "1D": 1.13,
+  "1W": 0.63,
+  "1M": -0.63,
+  "3M": 3.19
  },
  "rrg_params": {
   "resample": "W-FRI",
@@ -44,15 +44,15 @@
     "MRVL"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.91,
-   "ret_1w": -2.88,
-   "ret_1m": -2.21,
-   "ret_3m": -9.01,
-   "rel_1m_spy": 0.2,
-   "breadth": 50.0,
-   "breadth_3d_ago": 75.0,
-   "dollar_vol_ratio": 0.92,
-   "quadrant": "Improving"
+   "ret_1d": 4.69,
+   "ret_1w": 4.92,
+   "ret_1m": 7.73,
+   "ret_3m": -6.64,
+   "rel_1m_spy": 8.36,
+   "breadth": 75.0,
+   "breadth_3d_ago": 50.0,
+   "dollar_vol_ratio": 0.96,
+   "quadrant": "Leading"
   },
   {
    "name": "Semi Equip & Memory",
@@ -77,15 +77,15 @@
     "ASML"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.42,
-   "ret_1w": -11.46,
-   "ret_1m": -17.99,
-   "ret_3m": -25.16,
-   "rel_1m_spy": -15.58,
-   "breadth": 0.0,
-   "breadth_3d_ago": 14.3,
+   "ret_1d": 2.6,
+   "ret_1w": -5.36,
+   "ret_1m": -9.67,
+   "ret_3m": -25.57,
+   "rel_1m_spy": -9.04,
+   "breadth": 14.3,
+   "breadth_3d_ago": 0.0,
    "dollar_vol_ratio": 0.98,
-   "quadrant": "Lagging"
+   "quadrant": "Improving"
   },
   {
    "name": "Software",
@@ -117,14 +117,14 @@
     "CDNS"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.08,
-   "ret_1w": -0.84,
-   "ret_1m": 1.26,
-   "ret_3m": 6.2,
-   "rel_1m_spy": 3.67,
-   "breadth": 22.2,
+   "ret_1d": 0.68,
+   "ret_1w": 1.07,
+   "ret_1m": 1.92,
+   "ret_3m": 9.19,
+   "rel_1m_spy": 2.55,
+   "breadth": 55.6,
    "breadth_3d_ago": 33.3,
-   "dollar_vol_ratio": 0.96,
+   "dollar_vol_ratio": 0.95,
    "quadrant": "Weakening"
   },
   {
@@ -152,14 +152,14 @@
     "TSLA"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.13,
-   "ret_1w": 0.56,
-   "ret_1m": 2.24,
-   "ret_3m": 2.35,
-   "rel_1m_spy": 4.65,
-   "breadth": 57.1,
-   "breadth_3d_ago": 57.1,
-   "dollar_vol_ratio": 0.92,
+   "ret_1d": 1.75,
+   "ret_1w": 2.32,
+   "ret_1m": 4.81,
+   "ret_3m": 6.9,
+   "rel_1m_spy": 5.44,
+   "breadth": 85.7,
+   "breadth_3d_ago": 71.4,
+   "dollar_vol_ratio": 0.9,
    "quadrant": "Leading"
   },
   {
@@ -185,14 +185,14 @@
     "OKTA"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.51,
-   "ret_1w": 12.25,
-   "ret_1m": 10.84,
-   "ret_3m": 37.88,
-   "rel_1m_spy": 13.25,
+   "ret_1d": 1.03,
+   "ret_1w": 13.1,
+   "ret_1m": 11.77,
+   "ret_3m": 40.39,
+   "rel_1m_spy": 12.4,
    "breadth": 100.0,
-   "breadth_3d_ago": 20.0,
-   "dollar_vol_ratio": 1.12,
+   "breadth_3d_ago": 100.0,
+   "dollar_vol_ratio": 1.18,
    "quadrant": "Leading"
   },
   {
@@ -223,14 +223,14 @@
     "PACB"
    ],
    "insufficient_data": false,
-   "ret_1d": 2.03,
-   "ret_1w": 4.39,
-   "ret_1m": 5.23,
-   "ret_3m": 16.34,
-   "rel_1m_spy": 7.64,
-   "breadth": 25.0,
-   "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.02,
+   "ret_1d": 6.8,
+   "ret_1w": 13.2,
+   "ret_1m": 16.38,
+   "ret_3m": 22.8,
+   "rel_1m_spy": 17.01,
+   "breadth": 62.5,
+   "breadth_3d_ago": 25.0,
+   "dollar_vol_ratio": 1.25,
    "quadrant": "Leading"
   },
   {
@@ -255,14 +255,14 @@
     "BIIB"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.18,
-   "ret_1w": -0.86,
-   "ret_1m": -0.89,
-   "ret_3m": 14.51,
-   "rel_1m_spy": 1.52,
-   "breadth": 20.0,
-   "breadth_3d_ago": 20.0,
-   "dollar_vol_ratio": 0.9,
+   "ret_1d": 1.43,
+   "ret_1w": 1.18,
+   "ret_1m": -1.29,
+   "ret_3m": 16.43,
+   "rel_1m_spy": -0.66,
+   "breadth": 40.0,
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 0.93,
    "quadrant": "Leading"
   },
   {
@@ -288,14 +288,14 @@
     "PFE"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.09,
-   "ret_1w": -0.06,
-   "ret_1m": 1.65,
-   "ret_3m": 10.5,
-   "rel_1m_spy": 4.06,
-   "breadth": 16.7,
-   "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.84,
+   "ret_1d": 0.93,
+   "ret_1w": 1.35,
+   "ret_1m": 0.77,
+   "ret_3m": 12.28,
+   "rel_1m_spy": 1.4,
+   "breadth": 33.3,
+   "breadth_3d_ago": 16.7,
+   "dollar_vol_ratio": 0.9,
    "quadrant": "Leading"
   },
   {
@@ -321,14 +321,14 @@
     "LHX"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.44,
-   "ret_1w": 1.37,
-   "ret_1m": -8.94,
-   "ret_3m": -3.37,
-   "rel_1m_spy": -6.53,
+   "ret_1d": -0.86,
+   "ret_1w": 0.16,
+   "ret_1m": -11.19,
+   "ret_3m": -4.79,
+   "rel_1m_spy": -10.56,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.95,
+   "dollar_vol_ratio": 0.99,
    "quadrant": "Improving"
   },
   {
@@ -353,14 +353,14 @@
     "EOG"
    ],
    "insufficient_data": false,
-   "ret_1d": -4.31,
-   "ret_1w": -2.96,
-   "ret_1m": 1.42,
-   "ret_3m": 12.31,
-   "rel_1m_spy": 3.83,
+   "ret_1d": 0.07,
+   "ret_1w": -2.65,
+   "ret_1m": 0.27,
+   "ret_3m": 14.1,
+   "rel_1m_spy": 0.9,
    "breadth": 40.0,
-   "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.05,
+   "breadth_3d_ago": 80.0,
+   "dollar_vol_ratio": 1.0,
    "quadrant": "Weakening"
   },
   {
@@ -386,14 +386,14 @@
     "WFC"
    ],
    "insufficient_data": false,
-   "ret_1d": -2.53,
-   "ret_1w": -5.67,
-   "ret_1m": -6.52,
-   "ret_3m": -3.36,
-   "rel_1m_spy": -4.11,
+   "ret_1d": 0.53,
+   "ret_1w": -4.57,
+   "ret_1m": -5.92,
+   "ret_3m": -3.27,
+   "rel_1m_spy": -5.29,
    "breadth": 0.0,
-   "breadth_3d_ago": 60.0,
-   "dollar_vol_ratio": 1.23,
+   "breadth_3d_ago": 20.0,
+   "dollar_vol_ratio": 1.27,
    "quadrant": "Lagging"
   },
   {
@@ -415,14 +415,14 @@
     "WMT"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.62,
-   "ret_1w": 0.56,
-   "ret_1m": -1.88,
-   "ret_3m": -3.99,
-   "rel_1m_spy": 0.53,
+   "ret_1d": -0.12,
+   "ret_1w": 0.35,
+   "ret_1m": -3.09,
+   "ret_3m": -2.26,
+   "rel_1m_spy": -2.46,
    "breadth": 40.0,
-   "breadth_3d_ago": 20.0,
-   "dollar_vol_ratio": 0.88,
+   "breadth_3d_ago": 60.0,
+   "dollar_vol_ratio": 0.91,
    "quadrant": "Improving"
   },
   {
@@ -446,14 +446,14 @@
     "CEG"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.31,
-   "ret_1w": -5.09,
-   "ret_1m": -5.6,
-   "ret_3m": -6.85,
-   "rel_1m_spy": -3.19,
-   "breadth": 0.0,
-   "breadth_3d_ago": 40.0,
-   "dollar_vol_ratio": 1.0,
+   "ret_1d": 1.15,
+   "ret_1w": -2.65,
+   "ret_1m": -3.18,
+   "ret_3m": -4.89,
+   "rel_1m_spy": -2.55,
+   "breadth": 20.0,
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 0.99,
    "quadrant": "Lagging"
   },
   {
@@ -475,14 +475,14 @@
     "APD"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.1,
-   "ret_1w": -2.7,
-   "ret_1m": -3.21,
-   "ret_3m": -1.25,
-   "rel_1m_spy": -0.8,
+   "ret_1d": 0.96,
+   "ret_1w": 0.71,
+   "ret_1m": -0.61,
+   "ret_3m": 1.25,
+   "rel_1m_spy": 0.02,
    "breadth": 20.0,
    "breadth_3d_ago": 20.0,
-   "dollar_vol_ratio": 0.86,
+   "dollar_vol_ratio": 0.84,
    "quadrant": "Leading"
   },
   {
@@ -504,15 +504,15 @@
     "HBM"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.07,
-   "ret_1w": -10.19,
-   "ret_1m": -3.05,
-   "ret_3m": -6.05,
-   "rel_1m_spy": -0.64,
+   "ret_1d": 3.21,
+   "ret_1w": -0.31,
+   "ret_1m": 2.91,
+   "ret_3m": -0.85,
+   "rel_1m_spy": 3.54,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.81,
-   "quadrant": "Weakening"
+   "dollar_vol_ratio": 0.69,
+   "quadrant": "Leading"
   },
   {
    "name": "AI Infra & Data Center",
@@ -538,14 +538,14 @@
     "CIEN"
    ],
    "insufficient_data": false,
-   "ret_1d": 2.57,
-   "ret_1w": 0.05,
-   "ret_1m": -7.72,
-   "ret_3m": 1.28,
-   "rel_1m_spy": -5.31,
-   "breadth": 33.3,
-   "breadth_3d_ago": 66.7,
-   "dollar_vol_ratio": 1.14,
+   "ret_1d": 2.72,
+   "ret_1w": 6.4,
+   "ret_1m": 0.51,
+   "ret_3m": 1.88,
+   "rel_1m_spy": 1.14,
+   "breadth": 66.7,
+   "breadth_3d_ago": 16.7,
+   "dollar_vol_ratio": 1.2,
    "quadrant": "Weakening"
   },
   {
@@ -565,14 +565,14 @@
     "QBTS"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.17,
-   "ret_1w": -3.81,
-   "ret_1m": -21.4,
-   "ret_3m": -31.5,
-   "rel_1m_spy": -18.99,
-   "breadth": 0.0,
+   "ret_1d": 8.74,
+   "ret_1w": 6.91,
+   "ret_1m": -9.27,
+   "ret_3m": -23.28,
+   "rel_1m_spy": -8.64,
+   "breadth": 100.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.79,
+   "dollar_vol_ratio": 0.86,
    "quadrant": "Improving"
   },
   {
@@ -598,15 +598,15 @@
     "BWXT"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.07,
-   "ret_1w": -14.82,
-   "ret_1m": -15.96,
-   "ret_3m": -22.55,
-   "rel_1m_spy": -13.55,
+   "ret_1d": 4.98,
+   "ret_1w": -5.7,
+   "ret_1m": -8.03,
+   "ret_3m": -19.94,
+   "rel_1m_spy": -7.4,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.03,
-   "quadrant": "Lagging"
+   "dollar_vol_ratio": 1.08,
+   "quadrant": "Improving"
   },
   {
    "name": "Gold Miners",
@@ -628,14 +628,14 @@
     "WPM"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.07,
-   "ret_1w": -4.45,
-   "ret_1m": 4.44,
-   "ret_3m": 11.96,
-   "rel_1m_spy": 6.85,
+   "ret_1d": 2.11,
+   "ret_1w": 1.55,
+   "ret_1m": 11.12,
+   "ret_3m": 16.82,
+   "rel_1m_spy": 11.75,
    "breadth": 25.0,
-   "breadth_3d_ago": 75.0,
-   "dollar_vol_ratio": 0.67,
+   "breadth_3d_ago": 25.0,
+   "dollar_vol_ratio": 0.69,
    "quadrant": "Weakening"
   },
   {
@@ -658,15 +658,15 @@
     "RUN"
    ],
    "insufficient_data": false,
-   "ret_1d": -3.27,
-   "ret_1w": -5.22,
-   "ret_1m": -15.48,
-   "ret_3m": -32.99,
-   "rel_1m_spy": -13.07,
+   "ret_1d": 5.11,
+   "ret_1w": -0.26,
+   "ret_1m": -7.29,
+   "ret_3m": -27.53,
+   "rel_1m_spy": -6.66,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
    "dollar_vol_ratio": 1.01,
-   "quadrant": "Lagging"
+   "quadrant": "Improving"
   },
   {
    "name": "Crypto-linked",
@@ -691,15 +691,15 @@
     "RIOT"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.27,
-   "ret_1w": -7.86,
-   "ret_1m": 7.1,
-   "ret_3m": -13.87,
-   "rel_1m_spy": 9.51,
-   "breadth": 0.0,
+   "ret_1d": 6.22,
+   "ret_1w": 1.34,
+   "ret_1m": 20.19,
+   "ret_3m": -9.52,
+   "rel_1m_spy": 20.82,
+   "breadth": 60.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.86,
-   "quadrant": "Lagging"
+   "dollar_vol_ratio": 0.94,
+   "quadrant": "Leading"
   },
   {
    "name": "Space & Drones",
@@ -723,14 +723,14 @@
     "LUNR"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.26,
-   "ret_1w": -0.84,
-   "ret_1m": -21.84,
-   "ret_3m": -30.23,
-   "rel_1m_spy": -19.43,
-   "breadth": 20.0,
-   "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.06,
+   "ret_1d": 5.04,
+   "ret_1w": 5.73,
+   "ret_1m": -14.31,
+   "ret_3m": -27.94,
+   "rel_1m_spy": -13.68,
+   "breadth": 60.0,
+   "breadth_3d_ago": 20.0,
+   "dollar_vol_ratio": 1.01,
    "quadrant": "Improving"
   },
   {
@@ -755,15 +755,15 @@
     "BEKE"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.19,
-   "ret_1w": -2.46,
-   "ret_1m": -10.29,
-   "ret_3m": -8.22,
-   "rel_1m_spy": -7.88,
+   "ret_1d": 0.29,
+   "ret_1w": -1.3,
+   "ret_1m": -7.96,
+   "ret_3m": -5.85,
+   "rel_1m_spy": -7.33,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.69,
-   "quadrant": "Improving"
+   "dollar_vol_ratio": 0.71,
+   "quadrant": "Lagging"
   },
   {
    "name": "Homebuilders",
@@ -787,14 +787,14 @@
     "NVR"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.44,
-   "ret_1w": -1.18,
-   "ret_1m": -7.24,
-   "ret_3m": -9.55,
-   "rel_1m_spy": -4.83,
+   "ret_1d": 1.28,
+   "ret_1w": 2.39,
+   "ret_1m": -4.46,
+   "ret_3m": -5.96,
+   "rel_1m_spy": -3.83,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.22,
+   "dollar_vol_ratio": 1.21,
    "quadrant": "Improving"
   },
   {
@@ -821,14 +821,14 @@
     "RCL"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.33,
-   "ret_1w": -0.85,
-   "ret_1m": -11.19,
-   "ret_3m": -7.14,
-   "rel_1m_spy": -8.78,
+   "ret_1d": 0.25,
+   "ret_1w": -0.05,
+   "ret_1m": -10.51,
+   "ret_3m": -5.22,
+   "rel_1m_spy": -9.88,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.97,
+   "dollar_vol_ratio": 0.96,
    "quadrant": "Improving"
   },
   {
@@ -853,14 +853,14 @@
     "COF"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.97,
-   "ret_1w": -1.1,
-   "ret_1m": -4.7,
-   "ret_3m": 5.99,
-   "rel_1m_spy": -2.29,
+   "ret_1d": -0.27,
+   "ret_1w": -1.14,
+   "ret_1m": -5.76,
+   "ret_3m": 6.71,
+   "rel_1m_spy": -5.13,
    "breadth": 0.0,
-   "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.91,
+   "breadth_3d_ago": 20.0,
+   "dollar_vol_ratio": 0.94,
    "quadrant": "Lagging"
   },
   {
@@ -874,14 +874,14 @@
     "XLV"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.07,
-   "ret_1w": 0.71,
-   "ret_1m": 0.43,
-   "ret_3m": 10.18,
-   "rel_1m_spy": 2.84,
+   "ret_1d": 0.62,
+   "ret_1w": 1.9,
+   "ret_1m": -0.54,
+   "ret_3m": 12.5,
+   "rel_1m_spy": 0.09,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.95,
+   "dollar_vol_ratio": 0.97,
    "quadrant": "Leading"
   },
   {
@@ -895,14 +895,14 @@
     "XLF"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.62,
-   "ret_1w": -1.98,
-   "ret_1m": -2.87,
-   "ret_3m": 3.27,
-   "rel_1m_spy": -0.46,
+   "ret_1d": -0.09,
+   "ret_1w": -1.74,
+   "ret_1m": -3.39,
+   "ret_3m": 3.75,
+   "rel_1m_spy": -2.76,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.16,
+   "dollar_vol_ratio": 1.2,
    "quadrant": "Lagging"
   },
   {
@@ -916,14 +916,14 @@
     "XLI"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.08,
-   "ret_1w": -1.79,
-   "ret_1m": -9.45,
-   "ret_3m": -5.96,
-   "rel_1m_spy": -7.04,
+   "ret_1d": 0.18,
+   "ret_1w": -0.9,
+   "ret_1m": -7.93,
+   "ret_3m": -5.66,
+   "rel_1m_spy": -7.3,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.02,
+   "dollar_vol_ratio": 0.99,
    "quadrant": "Improving"
   },
   {
@@ -937,14 +937,14 @@
     "XLU"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.0,
-   "ret_1w": -3.77,
-   "ret_1m": -6.47,
-   "ret_3m": -7.71,
-   "rel_1m_spy": -4.06,
+   "ret_1d": 0.9,
+   "ret_1w": -1.95,
+   "ret_1m": -5.29,
+   "ret_3m": -5.63,
+   "rel_1m_spy": -4.66,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.01,
+   "dollar_vol_ratio": 1.0,
    "quadrant": "Lagging"
   },
   {
@@ -958,14 +958,14 @@
     "XLP"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.48,
-   "ret_1w": 0.34,
-   "ret_1m": -1.59,
-   "ret_3m": -1.96,
-   "rel_1m_spy": 0.82,
+   "ret_1d": 0.19,
+   "ret_1w": 0.48,
+   "ret_1m": -2.44,
+   "ret_3m": 0.47,
+   "rel_1m_spy": -1.81,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.1,
+   "dollar_vol_ratio": 1.07,
    "quadrant": "Improving"
   },
   {
@@ -979,14 +979,14 @@
     "XLRE"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.6,
-   "ret_1w": -1.38,
-   "ret_1m": -4.51,
-   "ret_3m": -4.25,
-   "rel_1m_spy": -2.1,
+   "ret_1d": 0.3,
+   "ret_1w": -0.26,
+   "ret_1m": -3.79,
+   "ret_3m": -1.49,
+   "rel_1m_spy": -3.16,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.0,
+   "dollar_vol_ratio": 0.99,
    "quadrant": "Improving"
   },
   {
@@ -1000,11 +1000,11 @@
     "XLB"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.73,
-   "ret_1w": -2.0,
-   "ret_1m": -3.6,
-   "ret_3m": -4.12,
-   "rel_1m_spy": -1.19,
+   "ret_1d": 0.69,
+   "ret_1w": -0.1,
+   "ret_1m": -2.07,
+   "ret_3m": -2.15,
+   "rel_1m_spy": -1.44,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
    "dollar_vol_ratio": 0.85,
@@ -1021,14 +1021,14 @@
     "XLY"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.63,
-   "ret_1w": -2.03,
-   "ret_1m": -5.63,
-   "ret_3m": -6.8,
-   "rel_1m_spy": -3.22,
+   "ret_1d": 1.1,
+   "ret_1w": -0.51,
+   "ret_1m": -4.27,
+   "ret_3m": -3.36,
+   "rel_1m_spy": -3.64,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.21,
+   "dollar_vol_ratio": 1.2,
    "quadrant": "Lagging"
   },
   {
@@ -1042,14 +1042,14 @@
     "XLC"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.9,
-   "ret_1w": 1.96,
-   "ret_1m": 1.97,
-   "ret_3m": 0.87,
-   "rel_1m_spy": 4.38,
+   "ret_1d": -0.58,
+   "ret_1w": 0.76,
+   "ret_1m": 1.69,
+   "ret_3m": 3.15,
+   "rel_1m_spy": 2.32,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.12,
+   "dollar_vol_ratio": 1.07,
    "quadrant": "Leading"
   },
   {
@@ -1063,14 +1063,14 @@
     "XLE"
    ],
    "insufficient_data": false,
-   "ret_1d": -2.88,
-   "ret_1w": -1.96,
-   "ret_1m": 2.32,
-   "ret_3m": 16.5,
-   "rel_1m_spy": 4.73,
-   "breadth": 0.0,
+   "ret_1d": 0.7,
+   "ret_1w": -0.69,
+   "ret_1m": 1.26,
+   "ret_3m": 18.79,
+   "rel_1m_spy": 1.89,
+   "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.35,
+   "dollar_vol_ratio": 1.32,
    "quadrant": "Weakening"
   },
   {
@@ -1084,15 +1084,15 @@
     "XLK"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.1,
-   "ret_1w": -2.1,
-   "ret_1m": -3.36,
-   "ret_3m": -1.23,
-   "rel_1m_spy": -0.95,
-   "breadth": 0.0,
-   "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.09,
-   "quadrant": "Weakening"
+   "ret_1d": 2.25,
+   "ret_1w": 1.53,
+   "ret_1m": 1.31,
+   "ret_3m": 1.34,
+   "rel_1m_spy": 1.94,
+   "breadth": 100.0,
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 1.15,
+   "quadrant": "Leading"
   }
  ],
  "rrg": {
@@ -1126,8 +1126,8 @@
     101.49
    ],
    [
-    99.86,
-    100.26
+    100.24,
+    100.98
    ]
   ],
   "Semi Equip & Memory": [
@@ -1160,8 +1160,8 @@
     100.01
    ],
    [
-    98.89,
-    99.91
+    98.98,
+    100.09
    ]
   ],
   "Software": [
@@ -1194,8 +1194,8 @@
     99.44
    ],
    [
-    100.77,
-    99.8
+    100.71,
+    99.69
    ]
   ],
   "Mag 7": [
@@ -1228,8 +1228,8 @@
     101.03
    ],
    [
-    101.56,
-    100.01
+    101.8,
+    100.38
    ]
   ],
   "Cybersecurity": [
@@ -1262,8 +1262,8 @@
     99.68
    ],
    [
-    102.28,
-    102.44
+    102.27,
+    102.43
    ]
   ],
   "Genomics": [
@@ -1296,8 +1296,8 @@
     99.05
    ],
    [
-    100.63,
-    100.77
+    101.31,
+    101.39
    ]
   ],
   "Biotech Large": [
@@ -1330,8 +1330,8 @@
     98.27
    ],
    [
-    100.66,
-    100.12
+    100.72,
+    100.19
    ]
   ],
   "Pharma & Managed Care": [
@@ -1364,8 +1364,8 @@
     99.25
    ],
    [
-    100.69,
-    100.54
+    100.63,
+    100.48
    ]
   ],
   "Defense": [
@@ -1398,8 +1398,8 @@
     100.24
    ],
    [
-    99.13,
-    100.71
+    98.74,
+    100.39
    ]
   ],
   "Energy": [
@@ -1432,8 +1432,8 @@
     100.08
    ],
    [
-    101.06,
-    99.29
+    100.91,
+    99.11
    ]
   ],
   "Banks & Brokers": [
@@ -1466,8 +1466,8 @@
     100.21
    ],
    [
-    97.64,
-    96.8
+    97.48,
+    96.77
    ]
   ],
   "Staples": [
@@ -1500,8 +1500,8 @@
     100.61
    ],
    [
-    99.5,
-    101.18
+    98.98,
+    100.14
    ]
   ],
   "Utilities & Power": [
@@ -1535,7 +1535,7 @@
    ],
    [
     98.79,
-    99.52
+    99.53
    ]
   ],
   "Materials": [
@@ -1568,8 +1568,8 @@
     99.37
    ],
    [
-    100.1,
-    100.55
+    100.01,
+    100.45
    ]
   ],
   "Copper": [
@@ -1602,8 +1602,8 @@
     99.64
    ],
    [
-    100.22,
-    99.87
+    100.46,
+    100.09
    ]
   ],
   "AI Infra & Data Center": [
@@ -1636,8 +1636,8 @@
     101.04
    ],
    [
-    100.14,
-    99.64
+    100.49,
+    99.93
    ]
   ],
   "Quantum": [
@@ -1670,8 +1670,8 @@
     100.5
    ],
    [
-    99.11,
-    100.4
+    99.51,
+    101.21
    ]
   ],
   "Nuclear & Uranium": [
@@ -1704,8 +1704,8 @@
     98.47
    ],
    [
-    98.4,
-    99.72
+    98.7,
+    100.32
    ]
   ],
   "Gold Miners": [
@@ -1738,8 +1738,8 @@
     99.45
    ],
    [
-    101.06,
-    99.26
+    101.14,
+    99.37
    ]
   ],
   "Solar": [
@@ -1772,8 +1772,8 @@
     100.79
    ],
    [
-    98.71,
-    99.95
+    98.91,
+    100.59
    ]
   ],
   "Crypto-linked": [
@@ -1806,8 +1806,8 @@
     99.71
    ],
    [
-    99.78,
-    99.64
+    100.26,
+    100.18
    ]
   ],
   "Space & Drones": [
@@ -1840,8 +1840,8 @@
     100.16
    ],
    [
-    99.2,
-    100.43
+    99.41,
+    100.81
    ]
   ],
   "China Tech ADR": [
@@ -1874,8 +1874,8 @@
     98.27
    ],
    [
-    98.49,
-    100.17
+    98.37,
+    99.93
    ]
   ],
   "Homebuilders": [
@@ -1908,8 +1908,8 @@
     99.54
    ],
    [
-    98.65,
-    100.77
+    98.67,
+    100.8
    ]
   ],
   "Travel & Airlines": [
@@ -1942,8 +1942,8 @@
     99.69
    ],
    [
-    98.31,
-    100.75
+    98.19,
+    100.55
    ]
   ],
   "Fintech & Payments": [
@@ -1976,8 +1976,8 @@
     99.1
    ],
    [
-    99.61,
-    99.39
+    99.2,
+    98.84
    ]
   ],
   "Health Care (XLV)": [
@@ -2010,8 +2010,8 @@
     98.78
    ],
    [
-    100.72,
-    100.87
+    100.56,
+    100.69
    ]
   ],
   "Financials (XLF)": [
@@ -2044,8 +2044,8 @@
     98.92
    ],
    [
-    99.56,
-    98.61
+    98.93,
+    97.8
    ]
   ],
   "Industrials (XLI)": [
@@ -2078,8 +2078,8 @@
     100.32
    ],
    [
-    98.27,
-    100.38
+    98.09,
+    100.13
    ]
   ],
   "Utilities (XLU)": [
@@ -2112,8 +2112,8 @@
     100.04
    ],
    [
-    98.75,
-    99.99
+    98.71,
+    99.94
    ]
   ],
   "Staples (XLP)": [
@@ -2146,8 +2146,8 @@
     99.95
    ],
    [
-    99.28,
-    100.93
+    98.87,
+    100.48
    ]
   ],
   "Real Estate (XLRE)": [
@@ -2180,8 +2180,8 @@
     100.19
    ],
    [
-    98.76,
-    100.26
+    98.56,
+    100.08
    ]
   ],
   "Materials (XLB)": [
@@ -2214,8 +2214,8 @@
     98.95
    ],
    [
-    98.65,
-    100.45
+    98.47,
+    100.26
    ]
   ],
   "Cons Discret (XLY)": [
@@ -2248,8 +2248,8 @@
     99.97
    ],
    [
-    98.17,
-    99.99
+    98.16,
+    99.98
    ]
   ],
   "Comm Svcs (XLC)": [
@@ -2282,8 +2282,8 @@
     102.14
    ],
    [
-    102.0,
-    102.28
+    100.79,
+    100.3
    ]
   ],
   "Energy (XLE)": [
@@ -2316,8 +2316,8 @@
     100.02
    ],
    [
-    101.29,
-    99.48
+    101.23,
+    99.41
    ]
   ],
   "Tech (XLK)": [
@@ -2350,8 +2350,8 @@
     100.91
    ],
    [
-    100.15,
-    99.76
+    100.61,
+    100.55
    ]
   ]
  },
