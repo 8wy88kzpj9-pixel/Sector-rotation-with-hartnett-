@@ -9035,35 +9035,35 @@
    },
    "Semi Equip & Memory": {
     "breadth": 0.0,
-    "ret_1d": -1.37
+    "ret_1d": -1.38
    },
    "Software": {
     "breadth": 77.8,
-    "ret_1d": -4.59
+    "ret_1d": 1.57
    },
    "Mag 7": {
     "breadth": 71.4,
-    "ret_1d": 3.72
+    "ret_1d": -0.25
    },
    "Cybersecurity": {
-    "breadth": 40.0,
-    "ret_1d": 3.3
+    "breadth": 20.0,
+    "ret_1d": -1.39
    },
    "Genomics": {
-    "breadth": 12.5,
-    "ret_1d": 22.03
+    "breadth": 25.0,
+    "ret_1d": 0.53
    },
    "Biotech Large": {
     "breadth": 80.0,
-    "ret_1d": 1.92
+    "ret_1d": 1.91
    },
    "Pharma & Managed Care": {
     "breadth": 66.7,
-    "ret_1d": 0.88
+    "ret_1d": 0.83
    },
    "Defense": {
     "breadth": 80.0,
-    "ret_1d": 0.98
+    "ret_1d": 0.97
    },
    "Energy": {
     "breadth": 80.0,
@@ -9075,15 +9075,15 @@
    },
    "Staples": {
     "breadth": 100.0,
-    "ret_1d": 0.25
+    "ret_1d": 0.24
    },
    "Utilities & Power": {
     "breadth": 100.0,
-    "ret_1d": 7.48
+    "ret_1d": -0.04
    },
    "Materials": {
     "breadth": 80.0,
-    "ret_1d": 0.68
+    "ret_1d": 0.69
    },
    "Copper": {
     "breadth": 0.0,
@@ -9091,35 +9091,35 @@
    },
    "AI Infra & Data Center": {
     "breadth": 0.0,
-    "ret_1d": -11.31
+    "ret_1d": -3.6
    },
    "Quantum": {
     "breadth": 0.0,
-    "ret_1d": -9.35
+    "ret_1d": 8.03
    },
    "Nuclear & Uranium": {
     "breadth": 0.0,
-    "ret_1d": 42.68
+    "ret_1d": 3.18
    },
    "Gold Miners": {
     "breadth": 0.0,
-    "ret_1d": -0.31
+    "ret_1d": 3.63
    },
    "Solar": {
-    "breadth": 0.0,
-    "ret_1d": 8.07
+    "breadth": 25.0,
+    "ret_1d": 2.43
    },
    "Crypto-linked": {
     "breadth": 0.0,
-    "ret_1d": -54.76
+    "ret_1d": 3.34
    },
    "Space & Drones": {
     "breadth": 0.0,
-    "ret_1d": -29.56
+    "ret_1d": 0.16
    },
    "China Tech ADR": {
-    "breadth": 60.0,
-    "ret_1d": 6.24
+    "breadth": 80.0,
+    "ret_1d": 1.25
    },
    "Homebuilders": {
     "breadth": 20.0,
@@ -9127,11 +9127,11 @@
    },
    "Travel & Airlines": {
     "breadth": 66.7,
-    "ret_1d": 2.74
+    "ret_1d": 2.95
    },
    "Fintech & Payments": {
     "breadth": 100.0,
-    "ret_1d": 7.82
+    "ret_1d": 2.16
    },
    "Health Care (XLV)": {
     "breadth": 100.0,
@@ -9154,8 +9154,8 @@
     "ret_1d": 0.72
    },
    "Real Estate (XLRE)": {
-    "breadth": 0.0,
-    "ret_1d": -0.81
+    "breadth": 100.0,
+    "ret_1d": 1.21
    },
    "Materials (XLB)": {
     "breadth": 100.0,
@@ -9166,8 +9166,8 @@
     "ret_1d": 1.71
    },
    "Comm Svcs (XLC)": {
-    "breadth": 0.0,
-    "ret_1d": -1.3
+    "breadth": 100.0,
+    "ret_1d": 1.46
    },
    "Energy (XLE)": {
     "breadth": 100.0,
