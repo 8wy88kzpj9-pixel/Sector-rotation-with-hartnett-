@@ -1,13 +1,13 @@
 {
  "SEED_VERSION": "1.0.0",
- "DATA_VERSION": "2026-10-15",
- "generated_at_utc": "2026-10-17T00:41:07+00:00",
+ "DATA_VERSION": "2026-10-16",
+ "generated_at_utc": "2026-10-20T01:09:03+00:00",
  "benchmark": "SPY",
  "benchmark_returns": {
-  "1D": 0.28,
-  "1W": -0.28,
-  "1M": 2.61,
-  "3M": 4.09
+  "1D": -1.11,
+  "1W": -1.97,
+  "1M": 0.33,
+  "3M": 3.11
  },
  "rrg_params": {
   "resample": "W-FRI",
@@ -44,14 +44,14 @@
     "MRVL"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.48,
-   "ret_1w": -8.49,
-   "ret_1m": 2.06,
-   "ret_3m": 7.75,
-   "rel_1m_spy": -0.55,
+   "ret_1d": -4.51,
+   "ret_1w": -11.53,
+   "ret_1m": -6.95,
+   "ret_3m": 1.21,
+   "rel_1m_spy": -7.28,
    "breadth": 0.0,
-   "breadth_3d_ago": 25.0,
-   "dollar_vol_ratio": 0.89,
+   "breadth_3d_ago": 50.0,
+   "dollar_vol_ratio": 0.98,
    "quadrant": "Lagging"
   },
   {
@@ -77,14 +77,14 @@
     "ASML"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.38,
-   "ret_1w": -10.76,
-   "ret_1m": -4.55,
-   "ret_3m": -11.16,
-   "rel_1m_spy": -7.16,
+   "ret_1d": -5.68,
+   "ret_1w": -15.95,
+   "ret_1m": -12.1,
+   "ret_3m": -16.96,
+   "rel_1m_spy": -12.43,
    "breadth": 0.0,
-   "breadth_3d_ago": 28.6,
-   "dollar_vol_ratio": 0.96,
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 1.03,
    "quadrant": "Lagging"
   },
   {
@@ -117,14 +117,14 @@
     "CDNS"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.57,
-   "ret_1w": 1.0,
-   "ret_1m": 8.61,
-   "ret_3m": 24.83,
-   "rel_1m_spy": 6.0,
-   "breadth": 77.8,
-   "breadth_3d_ago": 66.7,
-   "dollar_vol_ratio": 1.0,
+   "ret_1d": -3.48,
+   "ret_1w": -4.68,
+   "ret_1m": 4.28,
+   "ret_3m": 20.21,
+   "rel_1m_spy": 3.95,
+   "breadth": 55.6,
+   "breadth_3d_ago": 88.9,
+   "dollar_vol_ratio": 1.06,
    "quadrant": "Weakening"
   },
   {
@@ -152,14 +152,14 @@
     "TSLA"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.25,
-   "ret_1w": -0.58,
-   "ret_1m": 3.81,
-   "ret_3m": 6.28,
-   "rel_1m_spy": 1.2,
-   "breadth": 71.4,
-   "breadth_3d_ago": 85.7,
-   "dollar_vol_ratio": 0.89,
+   "ret_1d": -1.77,
+   "ret_1w": -3.1,
+   "ret_1m": 0.22,
+   "ret_3m": 4.44,
+   "rel_1m_spy": -0.11,
+   "breadth": 28.6,
+   "breadth_3d_ago": 100.0,
+   "dollar_vol_ratio": 0.98,
    "quadrant": "Weakening"
   },
   {
@@ -185,14 +185,14 @@
     "OKTA"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.39,
-   "ret_1w": -5.25,
-   "ret_1m": 4.97,
-   "ret_3m": 20.3,
-   "rel_1m_spy": 2.36,
-   "breadth": 20.0,
+   "ret_1d": -7.84,
+   "ret_1w": -16.69,
+   "ret_1m": -4.24,
+   "ret_3m": 12.52,
+   "rel_1m_spy": -4.57,
+   "breadth": 0.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.91,
+   "dollar_vol_ratio": 1.06,
    "quadrant": "Weakening"
   },
   {
@@ -223,14 +223,14 @@
     "PACB"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.53,
-   "ret_1w": -4.5,
-   "ret_1m": 8.1,
-   "ret_3m": 22.8,
-   "rel_1m_spy": 5.49,
-   "breadth": 25.0,
-   "breadth_3d_ago": 75.0,
-   "dollar_vol_ratio": 0.64,
+   "ret_1d": -6.05,
+   "ret_1w": -14.24,
+   "ret_1m": -5.02,
+   "ret_3m": 20.04,
+   "rel_1m_spy": -5.35,
+   "breadth": 0.0,
+   "breadth_3d_ago": 25.0,
+   "dollar_vol_ratio": 0.76,
    "quadrant": "Weakening"
   },
   {
@@ -255,14 +255,14 @@
     "BIIB"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.91,
-   "ret_1w": 6.28,
-   "ret_1m": 6.77,
-   "ret_3m": 15.06,
-   "rel_1m_spy": 4.16,
+   "ret_1d": -0.91,
+   "ret_1w": 3.13,
+   "ret_1m": 4.29,
+   "ret_3m": 15.5,
+   "rel_1m_spy": 3.96,
    "breadth": 80.0,
-   "breadth_3d_ago": 60.0,
-   "dollar_vol_ratio": 1.03,
+   "breadth_3d_ago": 40.0,
+   "dollar_vol_ratio": 1.15,
    "quadrant": "Leading"
   },
   {
@@ -288,14 +288,14 @@
     "PFE"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.83,
-   "ret_1w": 4.2,
-   "ret_1m": 4.11,
-   "ret_3m": 7.73,
-   "rel_1m_spy": 1.5,
-   "breadth": 66.7,
+   "ret_1d": 0.34,
+   "ret_1w": 2.78,
+   "ret_1m": 3.53,
+   "ret_3m": 9.81,
+   "rel_1m_spy": 3.2,
+   "breadth": 83.3,
    "breadth_3d_ago": 66.7,
-   "dollar_vol_ratio": 1.15,
+   "dollar_vol_ratio": 1.25,
    "quadrant": "Leading"
   },
   {
@@ -321,14 +321,14 @@
     "LHX"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.97,
-   "ret_1w": 2.7,
-   "ret_1m": -4.4,
-   "ret_3m": -4.95,
-   "rel_1m_spy": -7.01,
-   "breadth": 80.0,
+   "ret_1d": 3.36,
+   "ret_1w": 5.79,
+   "ret_1m": -0.34,
+   "ret_3m": -1.97,
+   "rel_1m_spy": -0.67,
+   "breadth": 100.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.96,
+   "dollar_vol_ratio": 1.17,
    "quadrant": "Improving"
   },
   {
@@ -353,14 +353,14 @@
     "EOG"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.87,
-   "ret_1w": 2.95,
-   "ret_1m": 2.95,
-   "ret_3m": 14.86,
-   "rel_1m_spy": 0.34,
+   "ret_1d": 2.96,
+   "ret_1w": 5.96,
+   "ret_1m": 5.91,
+   "ret_3m": 17.73,
+   "rel_1m_spy": 5.58,
    "breadth": 80.0,
    "breadth_3d_ago": 80.0,
-   "dollar_vol_ratio": 0.85,
+   "dollar_vol_ratio": 1.08,
    "quadrant": "Leading"
   },
   {
@@ -386,14 +386,14 @@
     "WFC"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.92,
-   "ret_1w": -0.7,
-   "ret_1m": -6.91,
-   "ret_3m": -11.14,
-   "rel_1m_spy": -9.52,
+   "ret_1d": -0.12,
+   "ret_1w": -2.09,
+   "ret_1m": -7.51,
+   "ret_3m": -10.07,
+   "rel_1m_spy": -7.84,
    "breadth": 40.0,
-   "breadth_3d_ago": 20.0,
-   "dollar_vol_ratio": 1.16,
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 1.28,
    "quadrant": "Improving"
   },
   {
@@ -415,14 +415,14 @@
     "WMT"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.24,
-   "ret_1w": 3.91,
-   "ret_1m": 5.09,
-   "ret_3m": 4.36,
-   "rel_1m_spy": 2.48,
+   "ret_1d": 1.58,
+   "ret_1w": 5.61,
+   "ret_1m": 6.86,
+   "ret_3m": 6.76,
+   "rel_1m_spy": 6.53,
    "breadth": 100.0,
    "breadth_3d_ago": 80.0,
-   "dollar_vol_ratio": 0.96,
+   "dollar_vol_ratio": 1.1,
    "quadrant": "Leading"
   },
   {
@@ -446,15 +446,15 @@
     "CEG"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.04,
-   "ret_1w": 0.65,
-   "ret_1m": 3.17,
-   "ret_3m": -3.28,
-   "rel_1m_spy": 0.56,
-   "breadth": 100.0,
+   "ret_1d": 0.7,
+   "ret_1w": -0.05,
+   "ret_1m": 2.69,
+   "ret_3m": -2.68,
+   "rel_1m_spy": 2.36,
+   "breadth": 80.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.86,
-   "quadrant": "Improving"
+   "dollar_vol_ratio": 0.91,
+   "quadrant": "Leading"
   },
   {
    "name": "Materials",
@@ -475,15 +475,15 @@
     "APD"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.69,
-   "ret_1w": 2.77,
-   "ret_1m": 1.98,
-   "ret_3m": 6.56,
-   "rel_1m_spy": -0.63,
+   "ret_1d": 0.25,
+   "ret_1w": 1.41,
+   "ret_1m": 1.34,
+   "ret_3m": 7.83,
+   "rel_1m_spy": 1.01,
    "breadth": 80.0,
-   "breadth_3d_ago": 80.0,
-   "dollar_vol_ratio": 0.86,
-   "quadrant": "Improving"
+   "breadth_3d_ago": 100.0,
+   "dollar_vol_ratio": 0.97,
+   "quadrant": "Leading"
   },
   {
    "name": "Copper",
@@ -504,14 +504,14 @@
     "HBM"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.6,
-   "ret_1w": -1.0,
-   "ret_1m": 1.13,
-   "ret_3m": 19.38,
-   "rel_1m_spy": -1.48,
+   "ret_1d": -1.42,
+   "ret_1w": -6.28,
+   "ret_1m": -3.37,
+   "ret_3m": 16.44,
+   "rel_1m_spy": -3.7,
    "breadth": 0.0,
    "breadth_3d_ago": 75.0,
-   "dollar_vol_ratio": 0.91,
+   "dollar_vol_ratio": 0.97,
    "quadrant": "Lagging"
   },
   {
@@ -538,14 +538,14 @@
     "CIEN"
    ],
    "insufficient_data": false,
-   "ret_1d": -3.6,
-   "ret_1w": -14.85,
-   "ret_1m": -5.92,
-   "ret_3m": 1.69,
-   "rel_1m_spy": -8.53,
+   "ret_1d": -5.31,
+   "ret_1w": -21.46,
+   "ret_1m": -13.17,
+   "ret_3m": -3.48,
+   "rel_1m_spy": -13.5,
    "breadth": 0.0,
-   "breadth_3d_ago": 50.0,
-   "dollar_vol_ratio": 1.11,
+   "breadth_3d_ago": 33.3,
+   "dollar_vol_ratio": 1.18,
    "quadrant": "Lagging"
   },
   {
@@ -565,14 +565,14 @@
     "QBTS"
    ],
    "insufficient_data": false,
-   "ret_1d": 8.03,
-   "ret_1w": -11.86,
-   "ret_1m": -14.4,
-   "ret_3m": -12.18,
-   "rel_1m_spy": -17.01,
+   "ret_1d": -7.73,
+   "ret_1w": -18.61,
+   "ret_1m": -27.43,
+   "ret_3m": -19.05,
+   "rel_1m_spy": -27.76,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.96,
+   "dollar_vol_ratio": 1.02,
    "quadrant": "Lagging"
   },
   {
@@ -598,14 +598,14 @@
     "BWXT"
    ],
    "insufficient_data": false,
-   "ret_1d": 3.18,
-   "ret_1w": -7.35,
-   "ret_1m": -9.78,
-   "ret_3m": -15.67,
-   "rel_1m_spy": -12.39,
+   "ret_1d": -3.77,
+   "ret_1w": -11.47,
+   "ret_1m": -17.1,
+   "ret_3m": -18.74,
+   "rel_1m_spy": -17.43,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.88,
+   "dollar_vol_ratio": 0.96,
    "quadrant": "Lagging"
   },
   {
@@ -628,14 +628,14 @@
     "WPM"
    ],
    "insufficient_data": false,
-   "ret_1d": 3.63,
-   "ret_1w": -1.21,
-   "ret_1m": -8.81,
-   "ret_3m": 23.08,
-   "rel_1m_spy": -11.42,
-   "breadth": 0.0,
+   "ret_1d": 0.89,
+   "ret_1w": -1.38,
+   "ret_1m": -9.86,
+   "ret_3m": 25.43,
+   "rel_1m_spy": -10.19,
+   "breadth": 50.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.87,
+   "dollar_vol_ratio": 1.01,
    "quadrant": "Lagging"
   },
   {
@@ -658,15 +658,15 @@
     "RUN"
    ],
    "insufficient_data": false,
-   "ret_1d": 2.43,
-   "ret_1w": -1.66,
-   "ret_1m": -4.71,
-   "ret_3m": -24.78,
-   "rel_1m_spy": -7.32,
-   "breadth": 25.0,
-   "breadth_3d_ago": 25.0,
-   "dollar_vol_ratio": 0.92,
-   "quadrant": "Improving"
+   "ret_1d": -3.4,
+   "ret_1w": -5.28,
+   "ret_1m": -12.09,
+   "ret_3m": -24.4,
+   "rel_1m_spy": -12.42,
+   "breadth": 0.0,
+   "breadth_3d_ago": 50.0,
+   "dollar_vol_ratio": 1.05,
+   "quadrant": "Lagging"
   },
   {
    "name": "Crypto-linked",
@@ -691,14 +691,14 @@
     "RIOT"
    ],
    "insufficient_data": false,
-   "ret_1d": 3.34,
-   "ret_1w": -4.88,
-   "ret_1m": -10.49,
-   "ret_3m": -2.84,
-   "rel_1m_spy": -13.1,
+   "ret_1d": -8.4,
+   "ret_1w": -14.0,
+   "ret_1m": -23.43,
+   "ret_3m": -16.05,
+   "rel_1m_spy": -23.76,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.78,
+   "dollar_vol_ratio": 0.88,
    "quadrant": "Lagging"
   },
   {
@@ -723,14 +723,14 @@
     "LUNR"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.16,
-   "ret_1w": -15.9,
-   "ret_1m": -17.4,
-   "ret_3m": -17.01,
-   "rel_1m_spy": -20.01,
+   "ret_1d": -5.82,
+   "ret_1w": -18.26,
+   "ret_1m": -25.93,
+   "ret_3m": -21.14,
+   "rel_1m_spy": -26.26,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.11,
+   "dollar_vol_ratio": 1.02,
    "quadrant": "Lagging"
   },
   {
@@ -755,14 +755,14 @@
     "BEKE"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.25,
-   "ret_1w": 2.87,
-   "ret_1m": 2.6,
-   "ret_3m": -7.77,
-   "rel_1m_spy": -0.01,
-   "breadth": 80.0,
-   "breadth_3d_ago": 60.0,
-   "dollar_vol_ratio": 1.07,
+   "ret_1d": -1.28,
+   "ret_1w": -1.6,
+   "ret_1m": 1.05,
+   "ret_3m": -10.78,
+   "rel_1m_spy": 0.72,
+   "breadth": 60.0,
+   "breadth_3d_ago": 80.0,
+   "dollar_vol_ratio": 1.0,
    "quadrant": "Improving"
   },
   {
@@ -787,14 +787,14 @@
     "NVR"
    ],
    "insufficient_data": false,
-   "ret_1d": 3.8,
-   "ret_1w": 0.23,
-   "ret_1m": -1.09,
-   "ret_3m": -8.77,
-   "rel_1m_spy": -3.7,
+   "ret_1d": -0.13,
+   "ret_1w": 1.25,
+   "ret_1m": -2.48,
+   "ret_3m": -6.94,
+   "rel_1m_spy": -2.81,
    "breadth": 20.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.82,
+   "dollar_vol_ratio": 0.97,
    "quadrant": "Improving"
   },
   {
@@ -821,14 +821,14 @@
     "RCL"
    ],
    "insufficient_data": false,
-   "ret_1d": 2.95,
-   "ret_1w": 0.48,
-   "ret_1m": 3.65,
-   "ret_3m": -1.51,
+   "ret_1d": -1.87,
+   "ret_1w": -1.96,
+   "ret_1m": 1.37,
+   "ret_3m": -3.54,
    "rel_1m_spy": 1.04,
    "breadth": 66.7,
    "breadth_3d_ago": 50.0,
-   "dollar_vol_ratio": 0.73,
+   "dollar_vol_ratio": 0.82,
    "quadrant": "Improving"
   },
   {
@@ -853,14 +853,14 @@
     "COF"
    ],
    "insufficient_data": false,
-   "ret_1d": 2.16,
-   "ret_1w": 3.94,
-   "ret_1m": 4.4,
-   "ret_3m": 1.46,
-   "rel_1m_spy": 1.79,
+   "ret_1d": 0.34,
+   "ret_1w": 2.97,
+   "ret_1m": 5.19,
+   "ret_3m": 2.18,
+   "rel_1m_spy": 4.86,
    "breadth": 100.0,
-   "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.02,
+   "breadth_3d_ago": 80.0,
+   "dollar_vol_ratio": 1.14,
    "quadrant": "Leading"
   },
   {
@@ -874,14 +874,14 @@
     "XLV"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.86,
-   "ret_1w": 5.37,
-   "ret_1m": 6.02,
-   "ret_3m": 10.42,
-   "rel_1m_spy": 3.41,
+   "ret_1d": -0.27,
+   "ret_1w": 3.45,
+   "ret_1m": 5.08,
+   "ret_3m": 11.39,
+   "rel_1m_spy": 4.75,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.06,
+   "dollar_vol_ratio": 1.12,
    "quadrant": "Leading"
   },
   {
@@ -895,14 +895,14 @@
     "XLF"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.38,
-   "ret_1w": 1.92,
-   "ret_1m": -0.83,
-   "ret_3m": -1.41,
-   "rel_1m_spy": -3.44,
+   "ret_1d": 0.45,
+   "ret_1w": 1.44,
+   "ret_1m": -0.29,
+   "ret_3m": -0.58,
+   "rel_1m_spy": -0.62,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.98,
+   "dollar_vol_ratio": 1.01,
    "quadrant": "Improving"
   },
   {
@@ -916,14 +916,14 @@
     "XLI"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.51,
-   "ret_1w": -0.3,
-   "ret_1m": -0.22,
-   "ret_3m": -6.17,
-   "rel_1m_spy": -2.83,
+   "ret_1d": -0.08,
+   "ret_1w": -0.88,
+   "ret_1m": -0.47,
+   "ret_3m": -5.56,
+   "rel_1m_spy": -0.8,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.89,
+   "dollar_vol_ratio": 1.03,
    "quadrant": "Improving"
   },
   {
@@ -937,14 +937,14 @@
     "XLU"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.17,
-   "ret_1w": 1.41,
-   "ret_1m": 1.54,
-   "ret_3m": -7.11,
-   "rel_1m_spy": -1.07,
+   "ret_1d": 1.34,
+   "ret_1w": 1.93,
+   "ret_1m": 1.99,
+   "ret_3m": -5.38,
+   "rel_1m_spy": 1.66,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.77,
+   "dollar_vol_ratio": 0.85,
    "quadrant": "Improving"
   },
   {
@@ -958,14 +958,14 @@
     "XLP"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.72,
-   "ret_1w": 3.91,
-   "ret_1m": 4.7,
-   "ret_3m": 2.42,
-   "rel_1m_spy": 2.09,
+   "ret_1d": 1.08,
+   "ret_1w": 5.02,
+   "ret_1m": 5.64,
+   "ret_3m": 3.93,
+   "rel_1m_spy": 5.31,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.13,
+   "dollar_vol_ratio": 1.35,
    "quadrant": "Leading"
   },
   {
@@ -979,14 +979,14 @@
     "XLRE"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.21,
-   "ret_1w": 2.79,
-   "ret_1m": -1.09,
-   "ret_3m": -6.77,
-   "rel_1m_spy": -3.7,
+   "ret_1d": 0.4,
+   "ret_1w": 1.32,
+   "ret_1m": -0.99,
+   "ret_3m": -6.0,
+   "rel_1m_spy": -1.32,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.07,
+   "dollar_vol_ratio": 1.09,
    "quadrant": "Improving"
   },
   {
@@ -1000,14 +1000,14 @@
     "XLB"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.79,
-   "ret_1w": 2.62,
-   "ret_1m": 0.86,
-   "ret_3m": 0.52,
-   "rel_1m_spy": -1.75,
+   "ret_1d": 0.71,
+   "ret_1w": 3.01,
+   "ret_1m": 0.88,
+   "ret_3m": 2.25,
+   "rel_1m_spy": 0.55,
    "breadth": 100.0,
-   "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.77,
+   "breadth_3d_ago": 100.0,
+   "dollar_vol_ratio": 0.86,
    "quadrant": "Improving"
   },
   {
@@ -1021,14 +1021,14 @@
     "XLY"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.71,
-   "ret_1w": 1.52,
-   "ret_1m": 3.16,
-   "ret_3m": -1.54,
-   "rel_1m_spy": 0.55,
+   "ret_1d": -0.84,
+   "ret_1w": -0.35,
+   "ret_1m": 1.18,
+   "ret_3m": -1.66,
+   "rel_1m_spy": 0.85,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.97,
+   "dollar_vol_ratio": 1.17,
    "quadrant": "Improving"
   },
   {
@@ -1042,15 +1042,15 @@
     "XLC"
    ],
    "insufficient_data": false,
-   "ret_1d": 1.46,
-   "ret_1w": 0.33,
-   "ret_1m": -0.17,
-   "ret_3m": 1.95,
-   "rel_1m_spy": -2.78,
-   "breadth": 100.0,
-   "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 1.0,
-   "quadrant": "Leading"
+   "ret_1d": -1.89,
+   "ret_1w": -0.05,
+   "ret_1m": -1.48,
+   "ret_3m": -0.11,
+   "rel_1m_spy": -1.81,
+   "breadth": 0.0,
+   "breadth_3d_ago": 100.0,
+   "dollar_vol_ratio": 1.02,
+   "quadrant": "Improving"
   },
   {
    "name": "Energy (XLE)",
@@ -1063,14 +1063,14 @@
     "XLE"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.58,
-   "ret_1w": 2.02,
-   "ret_1m": 4.57,
-   "ret_3m": 16.08,
-   "rel_1m_spy": 1.96,
+   "ret_1d": 2.52,
+   "ret_1w": 4.86,
+   "ret_1m": 6.46,
+   "ret_3m": 18.48,
+   "rel_1m_spy": 6.13,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.85,
+   "dollar_vol_ratio": 0.91,
    "quadrant": "Leading"
   },
   {
@@ -1084,22 +1084,22 @@
     "XLK"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.65,
-   "ret_1w": -4.34,
-   "ret_1m": 2.98,
-   "ret_3m": 7.87,
-   "rel_1m_spy": 0.37,
+   "ret_1d": -3.02,
+   "ret_1w": -7.7,
+   "ret_1m": -2.33,
+   "ret_3m": 4.54,
+   "rel_1m_spy": -2.66,
    "breadth": 0.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 1.09,
-   "quadrant": "Weakening"
+   "dollar_vol_ratio": 1.25,
+   "quadrant": "Lagging"
   }
  ],
  "rrg": {
   "Semiconductors": [
    [
     98.78,
-    100.31
+    100.33
    ],
    [
     99.22,
@@ -1107,7 +1107,7 @@
    ],
    [
     99.84,
-    101.47
+    101.46
    ],
    [
     100.34,
@@ -1122,46 +1122,46 @@
     100.23
    ],
    [
-    100.85,
-    98.52
+    100.84,
+    98.51
    ],
    [
-    99.9,
-    98.67
+    99.42,
+    98.19
    ]
   ],
   "Semi Equip & Memory": [
    [
-    98.94,
+    98.93,
     99.79
    ],
    [
-    99.28,
-    100.98
+    99.27,
+    100.97
    ],
    [
     99.13,
     100.03
    ],
    [
-    99.31,
+    99.3,
     100.71
    ],
    [
-    99.88,
+    99.87,
     101.4
    ],
    [
     100.02,
-    100.47
+    100.5
    ],
    [
     98.89,
     98.18
    ],
    [
-    97.43,
-    98.14
+    97.17,
+    97.89
    ]
   ],
   "Software": [
@@ -1178,8 +1178,8 @@
     99.43
    ],
    [
-    100.56,
-    99.46
+    100.55,
+    99.47
    ],
    [
     100.73,
@@ -1187,49 +1187,49 @@
    ],
    [
     101.12,
-    100.32
+    100.33
    ],
    [
     101.28,
     99.95
    ],
    [
-    101.06,
-    99.28
+    100.72,
+    98.76
    ]
   ],
   "Mag 7": [
    [
-    100.04,
+    100.02,
     101.06
    ],
    [
-    100.51,
-    100.72
+    100.48,
+    100.7
    ],
    [
-    101.36,
+    101.32,
     101.11
    ],
    [
-    101.75,
-    100.31
+    101.74,
+    100.36
    ],
    [
-    101.73,
+    101.72,
     99.66
    ],
    [
-    101.58,
-    99.26
+    101.57,
+    99.27
    ],
    [
     101.43,
-    99.39
+    99.4
    ],
    [
-    101.08,
-    99.13
+    100.84,
+    98.74
    ]
   ],
   "Cybersecurity": [
@@ -1238,16 +1238,16 @@
     102.4
    ],
    [
-    100.82,
-    98.7
+    100.81,
+    98.69
    ],
    [
-    100.57,
+    100.56,
     99.68
    ],
    [
     102.01,
-    102.17
+    102.18
    ],
    [
     102.13,
@@ -1262,42 +1262,42 @@
     99.73
    ],
    [
-    101.03,
-    98.32
+    100.35,
+    97.76
    ]
   ],
   "Genomics": [
    [
-    101.3,
-    99.46
+    101.28,
+    99.47
    ],
    [
-    100.76,
+    100.74,
     99.43
    ],
    [
-    99.88,
-    99.06
+    99.87,
+    99.07
    ],
    [
-    101.54,
-    101.59
+    101.51,
+    101.58
    ],
    [
-    101.7,
-    100.18
+    101.69,
+    100.19
    ],
    [
-    102.05,
-    100.45
+    102.06,
+    100.47
    ],
    [
-    101.32,
+    101.33,
     99.23
    ],
    [
-    100.44,
-    98.97
+    100.01,
+    98.54
    ]
   ],
   "Biotech Large": [
@@ -1314,7 +1314,7 @@
     98.29
    ],
    [
-    100.61,
+    100.6,
     100.0
    ],
    [
@@ -1330,42 +1330,42 @@
     100.44
    ],
    [
-    101.34,
-    101.36
+    101.38,
+    101.41
    ]
   ],
   "Pharma & Managed Care": [
    [
-    100.76,
+    100.75,
     99.13
    ],
    [
-    100.87,
+    100.85,
     99.98
    ],
    [
-    100.14,
+    100.12,
     99.26
    ],
    [
-    100.59,
-    100.45
+    100.57,
+    100.46
    ],
    [
-    100.55,
+    100.53,
     99.87
    ],
    [
-    99.37,
-    98.52
+    99.34,
+    98.51
    ],
    [
-    100.0,
-    101.05
+    99.98,
+    101.07
    ],
    [
-    101.33,
-    101.69
+    101.84,
+    102.11
    ]
   ],
   "Defense": [
@@ -1374,7 +1374,7 @@
     99.62
    ],
    [
-    98.16,
+    98.17,
     98.88
    ],
    [
@@ -1387,7 +1387,7 @@
    ],
    [
     98.1,
-    99.56
+    99.55
    ],
    [
     98.13,
@@ -1398,8 +1398,8 @@
     100.35
    ],
    [
-    98.99,
-    100.57
+    99.53,
+    101.0
    ]
   ],
   "Energy": [
@@ -1417,7 +1417,7 @@
    ],
    [
     100.76,
-    98.94
+    98.93
    ],
    [
     100.15,
@@ -1428,12 +1428,12 @@
     99.71
    ],
    [
-    100.28,
-    100.17
+    100.27,
+    100.16
    ],
    [
-    101.1,
-    100.87
+    101.92,
+    101.7
    ]
   ],
   "Banks & Brokers": [
@@ -1446,8 +1446,8 @@
     100.59
    ],
    [
-    100.35,
-    100.23
+    100.34,
+    100.22
    ],
    [
     97.33,
@@ -1466,25 +1466,25 @@
     100.83
    ],
    [
-    98.29,
-    100.5
+    98.4,
+    100.61
    ]
   ],
   "Staples": [
    [
-    98.61,
-    99.06
+    98.62,
+    99.05
    ],
    [
     98.64,
-    99.96
+    99.93
    ],
    [
-    98.92,
+    98.93,
     100.61
    ],
    [
-    98.69,
+    98.68,
     99.52
    ],
    [
@@ -1493,15 +1493,15 @@
    ],
    [
     98.09,
-    99.0
+    99.01
    ],
    [
     99.14,
-    102.04
+    102.03
    ],
    [
-    101.34,
-    102.65
+    102.16,
+    102.96
    ]
   ],
   "Utilities & Power": [
@@ -1515,14 +1515,14 @@
    ],
    [
     99.14,
-    99.8
+    99.79
    ],
    [
     98.48,
     99.21
    ],
    [
-    98.2,
+    98.19,
     99.73
    ],
    [
@@ -1530,46 +1530,46 @@
     100.5
    ],
    [
-    99.59,
+    99.57,
     101.26
    ],
    [
-    99.69,
-    100.07
+    100.03,
+    100.46
    ]
   ],
   "Materials": [
    [
-    101.04,
-    99.89
+    101.07,
+    99.87
    ],
    [
-    100.32,
-    99.14
+    100.33,
+    99.11
    ],
    [
     99.67,
-    99.32
+    99.31
    ],
    [
-    98.92,
-    99.33
+    98.94,
+    99.34
    ],
    [
-    98.79,
-    99.96
+    98.8,
+    99.95
    ],
    [
-    98.61,
+    98.63,
     99.94
    ],
    [
-    99.13,
-    100.77
+    99.14,
+    100.75
    ],
    [
-    99.94,
-    101.03
+    100.56,
+    101.65
    ]
   ],
   "Copper": [
@@ -1590,7 +1590,7 @@
     100.16
    ],
    [
-    100.55,
+    100.54,
     100.02
    ],
    [
@@ -1602,8 +1602,8 @@
     99.45
    ],
    [
-    99.69,
-    99.08
+    99.64,
+    99.04
    ]
   ],
   "AI Infra & Data Center": [
@@ -1612,23 +1612,23 @@
     100.07
    ],
    [
-    99.24,
-    100.25
+    99.23,
+    100.24
    ],
    [
-    100.47,
-    101.1
+    100.45,
+    101.09
    ],
    [
-    100.35,
+    100.34,
     99.89
    ],
    [
-    100.54,
+    100.53,
     100.14
    ],
    [
-    101.36,
+    101.35,
     100.66
    ],
    [
@@ -1636,8 +1636,8 @@
     100.35
    ],
    [
-    98.46,
-    97.58
+    97.95,
+    97.43
    ]
   ],
   "Quantum": [
@@ -1646,66 +1646,66 @@
     99.5
    ],
    [
-    98.97,
+    98.96,
     100.34
    ],
    [
     99.05,
-    100.49
+    100.51
    ],
    [
     99.36,
-    100.92
+    100.91
    ],
    [
-    99.91,
-    101.27
+    99.9,
+    101.26
    ],
    [
-    99.4,
-    98.98
+    99.38,
+    98.95
    ],
    [
-    98.61,
-    98.59
+    98.6,
+    98.6
    ],
    [
-    98.07,
-    99.02
+    97.78,
+    98.57
    ]
   ],
   "Nuclear & Uranium": [
    [
-    98.94,
-    99.2
+    98.95,
+    99.25
    ],
    [
-    99.18,
-    100.42
+    99.19,
+    100.43
+   ],
+   [
+    98.6,
+    98.55
    ],
    [
     98.58,
-    98.52
+    99.89
    ],
    [
-    98.55,
-    99.88
+    98.26,
+    99.23
    ],
    [
-    98.23,
-    99.26
+    98.07,
+    99.53
    ],
    [
-    98.05,
-    99.59
+    98.43,
+    101.15
    ],
    [
-    98.44,
-    101.19
-   ],
-   [
-    98.09,
-    99.07
+    97.92,
+    98.66
    ]
   ],
   "Gold Miners": [
@@ -1738,14 +1738,14 @@
     99.74
    ],
    [
-    99.7,
-    99.54
+    99.88,
+    99.79
    ]
   ],
   "Solar": [
    [
     98.72,
-    100.29
+    100.3
    ],
    [
     98.71,
@@ -1757,7 +1757,7 @@
    ],
    [
     98.77,
-    100.15
+    100.14
    ],
    [
     98.53,
@@ -1765,59 +1765,59 @@
    ],
    [
     98.67,
-    100.74
+    100.78
    ],
    [
     98.76,
-    100.47
+    100.48
    ],
    [
-    98.78,
-    100.17
+    98.63,
+    99.59
    ]
   ],
   "Crypto-linked": [
    [
-    99.28,
-    99.86
+    99.26,
+    99.88
    ],
    [
-    100.44,
-    101.39
+    100.39,
+    101.4
    ],
    [
-    100.19,
-    99.74
+    100.17,
+    99.78
    ],
    [
-    101.19,
-    101.16
+    101.16,
+    101.17
    ],
    [
-    101.0,
-    99.81
+    100.97,
+    99.82
    ],
    [
-    100.07,
+    100.05,
     99.06
    ],
    [
-    99.0,
-    98.88
+    98.96,
+    98.84
    ],
    [
-    98.68,
-    99.69
+    98.14,
+    99.18
    ]
   ],
   "Space & Drones": [
    [
-    99.07,
+    99.08,
     99.94
    ],
    [
     99.0,
-    100.24
+    100.23
    ],
    [
     99.0,
@@ -1828,20 +1828,20 @@
     100.38
    ],
    [
-    99.6,
-    100.89
+    99.59,
+    100.87
    ],
    [
-    99.44,
-    99.46
+    99.42,
+    99.42
    ],
    [
-    98.69,
-    98.33
+    98.68,
+    98.34
    ],
    [
-    98.05,
-    98.42
+    97.87,
+    98.11
    ]
   ],
   "China Tech ADR": [
@@ -1850,32 +1850,32 @@
     100.02
    ],
    [
-    99.13,
+    99.14,
     98.98
    ],
    [
-    98.36,
+    98.37,
     98.27
    ],
    [
     98.59,
-    100.41
+    100.39
    ],
    [
     98.34,
     99.36
    ],
    [
-    98.23,
+    98.24,
     99.73
    ],
    [
-    98.96,
+    98.97,
     101.47
    ],
    [
-    99.17,
-    100.45
+    99.15,
+    100.4
    ]
   ],
   "Homebuilders": [
@@ -1885,7 +1885,7 @@
    ],
    [
     98.62,
-    99.06
+    99.05
    ],
    [
     98.27,
@@ -1908,22 +1908,22 @@
     99.65
    ],
    [
-    98.77,
-    101.62
+    98.91,
+    101.85
    ]
   ],
   "Travel & Airlines": [
    [
-    99.21,
-    98.88
+    99.23,
+    98.89
    ],
    [
-    98.48,
-    99.02
+    98.5,
+    99.01
    ],
    [
     98.13,
-    99.72
+    99.7
    ],
    [
     98.21,
@@ -1931,53 +1931,53 @@
    ],
    [
     98.59,
-    101.06
+    101.05
    ],
    [
-    99.06,
-    101.42
+    99.05,
+    101.41
    ],
    [
-    98.89,
-    100.05
+    98.88,
+    100.04
    ],
    [
-    99.17,
-    100.9
+    99.03,
+    100.63
    ]
   ],
   "Fintech & Payments": [
    [
-    100.66,
-    98.9
+    100.68,
+    98.92
    ],
    [
-    100.42,
-    99.35
+    100.43,
+    99.34
    ],
    [
-    99.95,
-    99.1
-   ],
-   [
-    99.11,
-    98.73
-   ],
-   [
-    98.51,
-    99.21
-   ],
-   [
-    98.0,
-    99.45
+    99.98,
+    99.12
    ],
    [
     99.16,
-    101.93
+    98.76
    ],
    [
-    100.2,
-    101.45
+    98.55,
+    99.19
+   ],
+   [
+    98.01,
+    99.39
+   ],
+   [
+    99.21,
+    101.96
+   ],
+   [
+    100.75,
+    101.91
    ]
   ],
   "Health Care (XLV)": [
@@ -2010,8 +2010,8 @@
     101.4
    ],
    [
-    102.13,
-    102.15
+    102.35,
+    102.29
    ]
   ],
   "Financials (XLF)": [
@@ -2044,8 +2044,8 @@
     101.6
    ],
    [
-    99.03,
-    101.24
+    99.48,
+    101.72
    ]
   ],
   "Industrials (XLI)": [
@@ -2078,8 +2078,8 @@
     100.13
    ],
    [
-    98.72,
-    100.64
+    98.91,
+    100.95
    ]
   ],
   "Utilities (XLU)": [
@@ -2112,8 +2112,8 @@
     100.8
    ],
    [
-    99.44,
-    100.46
+    99.83,
+    100.92
    ]
   ],
   "Staples (XLP)": [
@@ -2146,8 +2146,8 @@
     101.4
    ],
    [
-    100.81,
-    101.86
+    101.5,
+    102.3
    ]
   ],
   "Real Estate (XLRE)": [
@@ -2180,8 +2180,8 @@
     100.69
    ],
    [
-    99.07,
-    100.66
+    99.33,
+    100.96
    ]
   ],
   "Materials (XLB)": [
@@ -2214,8 +2214,8 @@
     100.55
    ],
    [
-    99.36,
-    101.18
+    99.9,
+    101.64
    ]
   ],
   "Cons Discret (XLY)": [
@@ -2248,8 +2248,8 @@
     100.8
    ],
    [
-    99.43,
-    100.66
+    99.51,
+    100.76
    ]
   ],
   "Comm Svcs (XLC)": [
@@ -2282,8 +2282,8 @@
     99.54
    ],
    [
-    100.26,
-    102.11
+    99.65,
+    101.69
    ]
   ],
   "Energy (XLE)": [
@@ -2316,8 +2316,8 @@
     100.28
    ],
    [
-    101.55,
-    100.56
+    102.17,
+    101.18
    ]
   ],
   "Tech (XLK)": [
@@ -2350,8 +2350,8 @@
     98.52
    ],
    [
-    100.0,
-    98.23
+    99.4,
+    97.77
    ]
   ]
  },
