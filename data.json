@@ -1,13 +1,13 @@
 {
  "SEED_VERSION": "1.0.0",
- "DATA_VERSION": "2026-11-16",
- "generated_at_utc": "2026-11-17T04:41:56+00:00",
+ "DATA_VERSION": "2026-11-17",
+ "generated_at_utc": "2026-11-18T03:47:09+00:00",
  "benchmark": "SPY",
  "benchmark_returns": {
-  "1D": -1.91,
-  "1W": -1.69,
-  "1M": -3.05,
-  "3M": -3.34
+  "1D": -1.01,
+  "1W": -2.33,
+  "1M": -4.44,
+  "3M": -4.53
  },
  "rrg_params": {
   "resample": "W-FRI",
@@ -44,14 +44,14 @@
     "MRVL"
    ],
    "insufficient_data": false,
-   "ret_1d": -5.43,
-   "ret_1w": -3.49,
-   "ret_1m": -18.97,
-   "ret_3m": -18.78,
-   "rel_1m_spy": -15.92,
+   "ret_1d": -0.07,
+   "ret_1w": -3.82,
+   "ret_1m": -20.45,
+   "ret_3m": -18.15,
+   "rel_1m_spy": -16.01,
    "breadth": 12.5,
-   "breadth_3d_ago": 62.5,
-   "dollar_vol_ratio": 1.39,
+   "breadth_3d_ago": 50.0,
+   "dollar_vol_ratio": 1.32,
    "quadrant": "Improving"
   },
   {
@@ -77,14 +77,14 @@
     "ASML"
    ],
    "insufficient_data": false,
-   "ret_1d": -6.18,
-   "ret_1w": -3.34,
-   "ret_1m": -17.47,
-   "ret_3m": -34.07,
-   "rel_1m_spy": -14.42,
+   "ret_1d": -0.09,
+   "ret_1w": -3.1,
+   "ret_1m": -19.98,
+   "ret_3m": -30.93,
+   "rel_1m_spy": -15.54,
    "breadth": 0.0,
-   "breadth_3d_ago": 28.6,
-   "dollar_vol_ratio": 0.87,
+   "breadth_3d_ago": 14.3,
+   "dollar_vol_ratio": 0.88,
    "quadrant": "Improving"
   },
   {
@@ -117,12 +117,12 @@
     "CDNS"
    ],
    "insufficient_data": false,
-   "ret_1d": -2.4,
-   "ret_1w": -3.24,
-   "ret_1m": -7.82,
-   "ret_3m": -1.96,
-   "rel_1m_spy": -4.77,
-   "breadth": 11.1,
+   "ret_1d": -3.79,
+   "ret_1w": -5.82,
+   "ret_1m": -12.67,
+   "ret_3m": -7.59,
+   "rel_1m_spy": -8.23,
+   "breadth": 0.0,
    "breadth_3d_ago": 44.4,
    "dollar_vol_ratio": 0.79,
    "quadrant": "Lagging"
@@ -152,14 +152,14 @@
     "TSLA"
    ],
    "insufficient_data": false,
-   "ret_1d": -2.64,
-   "ret_1w": -2.94,
-   "ret_1m": -6.96,
-   "ret_3m": -2.0,
-   "rel_1m_spy": -3.91,
+   "ret_1d": -0.71,
+   "ret_1w": -2.83,
+   "ret_1m": -9.04,
+   "ret_3m": -3.92,
+   "rel_1m_spy": -4.6,
    "breadth": 28.6,
    "breadth_3d_ago": 42.9,
-   "dollar_vol_ratio": 1.1,
+   "dollar_vol_ratio": 1.07,
    "quadrant": "Lagging"
   },
   {
@@ -185,14 +185,14 @@
     "OKTA"
    ],
    "insufficient_data": false,
-   "ret_1d": -2.07,
-   "ret_1w": -1.82,
-   "ret_1m": -9.45,
-   "ret_3m": -2.0,
-   "rel_1m_spy": -6.4,
+   "ret_1d": -1.55,
+   "ret_1w": -2.8,
+   "ret_1m": -12.01,
+   "ret_3m": -0.35,
+   "rel_1m_spy": -7.57,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.68,
+   "dollar_vol_ratio": 0.7,
    "quadrant": "Improving"
   },
   {
@@ -223,15 +223,15 @@
     "PACB"
    ],
    "insufficient_data": false,
-   "ret_1d": -5.93,
-   "ret_1w": -20.51,
-   "ret_1m": -16.88,
-   "ret_3m": -7.02,
-   "rel_1m_spy": -13.83,
+   "ret_1d": 1.59,
+   "ret_1w": -15.07,
+   "ret_1m": -18.24,
+   "ret_3m": -17.35,
+   "rel_1m_spy": -13.8,
    "breadth": 0.0,
-   "breadth_3d_ago": 12.5,
-   "dollar_vol_ratio": 0.85,
-   "quadrant": "Lagging"
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 0.87,
+   "quadrant": "Improving"
   },
   {
    "name": "Biotech Large",
@@ -251,18 +251,19 @@
     "AMGN",
     "GILD",
     "VRTX",
-    "REGN"
+    "REGN",
+    "BIIB"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.39,
-   "ret_1w": 0.07,
-   "ret_1m": 10.7,
-   "ret_3m": 12.03,
-   "rel_1m_spy": 13.75,
-   "breadth": 100.0,
+   "ret_1d": 0.07,
+   "ret_1w": -0.04,
+   "ret_1m": 11.06,
+   "ret_3m": 9.36,
+   "rel_1m_spy": 15.5,
+   "breadth": 60.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.81,
-   "quadrant": "Weakening"
+   "dollar_vol_ratio": 0.83,
+   "quadrant": "Leading"
   },
   {
    "name": "Pharma & Managed Care",
@@ -287,14 +288,14 @@
     "PFE"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.66,
-   "ret_1w": 0.18,
-   "ret_1m": 4.87,
-   "ret_3m": 9.39,
-   "rel_1m_spy": 7.92,
-   "breadth": 66.7,
+   "ret_1d": -1.69,
+   "ret_1w": -1.96,
+   "ret_1m": 3.74,
+   "ret_3m": 3.33,
+   "rel_1m_spy": 8.18,
+   "breadth": 50.0,
    "breadth_3d_ago": 66.7,
-   "dollar_vol_ratio": 0.84,
+   "dollar_vol_ratio": 0.88,
    "quadrant": "Weakening"
   },
   {
@@ -320,14 +321,14 @@
     "LHX"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.86,
-   "ret_1w": -0.82,
-   "ret_1m": 4.12,
-   "ret_3m": -7.78,
-   "rel_1m_spy": 7.17,
-   "breadth": 0.0,
+   "ret_1d": 0.5,
+   "ret_1w": -2.2,
+   "ret_1m": 5.88,
+   "ret_3m": -5.84,
+   "rel_1m_spy": 10.32,
+   "breadth": 40.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.67,
+   "dollar_vol_ratio": 0.71,
    "quadrant": "Leading"
   },
   {
@@ -352,14 +353,14 @@
     "EOG"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.65,
-   "ret_1w": 2.8,
-   "ret_1m": -2.83,
-   "ret_3m": 3.13,
-   "rel_1m_spy": 0.22,
+   "ret_1d": -0.73,
+   "ret_1w": 1.68,
+   "ret_1m": -3.03,
+   "ret_3m": 1.88,
+   "rel_1m_spy": 1.41,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.88,
+   "dollar_vol_ratio": 0.86,
    "quadrant": "Weakening"
   },
   {
@@ -385,15 +386,15 @@
     "WFC"
    ],
    "insufficient_data": false,
-   "ret_1d": -2.23,
-   "ret_1w": -1.06,
-   "ret_1m": 0.8,
-   "ret_3m": -12.26,
-   "rel_1m_spy": 3.85,
-   "breadth": 20.0,
-   "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.8,
-   "quadrant": "Improving"
+   "ret_1d": -1.76,
+   "ret_1w": -3.05,
+   "ret_1m": 0.55,
+   "ret_3m": -12.36,
+   "rel_1m_spy": 4.99,
+   "breadth": 0.0,
+   "breadth_3d_ago": 80.0,
+   "dollar_vol_ratio": 0.85,
+   "quadrant": "Lagging"
   },
   {
    "name": "Staples",
@@ -414,14 +415,14 @@
     "WMT"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.7,
-   "ret_1w": 3.23,
-   "ret_1m": 9.2,
-   "ret_3m": 13.32,
-   "rel_1m_spy": 12.25,
+   "ret_1d": -1.03,
+   "ret_1w": 1.71,
+   "ret_1m": 8.02,
+   "ret_3m": 11.47,
+   "rel_1m_spy": 12.46,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.91,
+   "dollar_vol_ratio": 0.97,
    "quadrant": "Weakening"
   },
   {
@@ -445,14 +446,14 @@
     "CEG"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.28,
-   "ret_1w": 0.36,
-   "ret_1m": 2.36,
-   "ret_3m": 1.69,
-   "rel_1m_spy": 5.41,
+   "ret_1d": -1.56,
+   "ret_1w": -0.38,
+   "ret_1m": 3.05,
+   "ret_3m": -0.42,
+   "rel_1m_spy": 7.49,
    "breadth": 80.0,
-   "breadth_3d_ago": 80.0,
-   "dollar_vol_ratio": 0.94,
+   "breadth_3d_ago": 60.0,
+   "dollar_vol_ratio": 0.96,
    "quadrant": "Leading"
   },
   {
@@ -474,14 +475,14 @@
     "APD"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.52,
-   "ret_1w": -2.16,
-   "ret_1m": -3.03,
-   "ret_3m": -2.47,
-   "rel_1m_spy": 0.02,
-   "breadth": 60.0,
+   "ret_1d": -1.0,
+   "ret_1w": -3.21,
+   "ret_1m": -4.48,
+   "ret_3m": -3.16,
+   "rel_1m_spy": -0.04,
+   "breadth": 20.0,
    "breadth_3d_ago": 60.0,
-   "dollar_vol_ratio": 0.84,
+   "dollar_vol_ratio": 0.87,
    "quadrant": "Leading"
   },
   {
@@ -503,15 +504,15 @@
     "HBM"
    ],
    "insufficient_data": false,
-   "ret_1d": -6.8,
-   "ret_1w": -12.66,
-   "ret_1m": -18.17,
-   "ret_3m": -18.63,
-   "rel_1m_spy": -15.12,
+   "ret_1d": 0.16,
+   "ret_1w": -9.55,
+   "ret_1m": -18.21,
+   "ret_3m": -21.45,
+   "rel_1m_spy": -13.77,
    "breadth": 0.0,
-   "breadth_3d_ago": 25.0,
-   "dollar_vol_ratio": 0.86,
-   "quadrant": "Lagging"
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 0.9,
+   "quadrant": "Improving"
   },
   {
    "name": "AI Infra & Data Center",
@@ -537,13 +538,13 @@
     "CIEN"
    ],
    "insufficient_data": false,
-   "ret_1d": -6.79,
-   "ret_1w": -5.2,
-   "ret_1m": -18.28,
-   "ret_3m": -28.93,
-   "rel_1m_spy": -15.23,
+   "ret_1d": 0.94,
+   "ret_1w": -2.96,
+   "ret_1m": -18.79,
+   "ret_3m": -25.61,
+   "rel_1m_spy": -14.35,
    "breadth": 16.7,
-   "breadth_3d_ago": 16.7,
+   "breadth_3d_ago": 33.3,
    "dollar_vol_ratio": 0.93,
    "quadrant": "Improving"
   },
@@ -564,15 +565,15 @@
     "QBTS"
    ],
    "insufficient_data": false,
-   "ret_1d": -7.82,
-   "ret_1w": -26.73,
-   "ret_1m": -21.48,
-   "ret_3m": -48.25,
-   "rel_1m_spy": -18.43,
+   "ret_1d": -6.48,
+   "ret_1w": -27.81,
+   "ret_1m": -26.08,
+   "ret_3m": -50.61,
+   "rel_1m_spy": -21.64,
    "breadth": 0.0,
-   "breadth_3d_ago": 33.3,
-   "dollar_vol_ratio": 0.99,
-   "quadrant": "Improving"
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 0.95,
+   "quadrant": "Lagging"
   },
   {
    "name": "Nuclear & Uranium",
@@ -597,14 +598,14 @@
     "BWXT"
    ],
    "insufficient_data": false,
-   "ret_1d": -5.63,
-   "ret_1w": -12.59,
-   "ret_1m": -17.11,
-   "ret_3m": -36.06,
-   "rel_1m_spy": -14.06,
+   "ret_1d": -1.34,
+   "ret_1w": -10.49,
+   "ret_1m": -16.77,
+   "ret_3m": -37.94,
+   "rel_1m_spy": -12.33,
    "breadth": 0.0,
-   "breadth_3d_ago": 40.0,
-   "dollar_vol_ratio": 0.84,
+   "breadth_3d_ago": 0.0,
+   "dollar_vol_ratio": 0.81,
    "quadrant": "Improving"
   },
   {
@@ -627,14 +628,14 @@
     "WPM"
    ],
    "insufficient_data": false,
-   "ret_1d": -3.24,
-   "ret_1w": -11.72,
-   "ret_1m": -8.28,
-   "ret_3m": -7.92,
-   "rel_1m_spy": -5.23,
+   "ret_1d": 0.83,
+   "ret_1w": -7.14,
+   "ret_1m": -6.11,
+   "ret_3m": -15.29,
+   "rel_1m_spy": -1.67,
    "breadth": 0.0,
-   "breadth_3d_ago": 75.0,
-   "dollar_vol_ratio": 0.85,
+   "breadth_3d_ago": 25.0,
+   "dollar_vol_ratio": 0.81,
    "quadrant": "Improving"
   },
   {
@@ -657,14 +658,14 @@
     "RUN"
    ],
    "insufficient_data": false,
-   "ret_1d": -4.96,
-   "ret_1w": -14.71,
-   "ret_1m": 1.4,
-   "ret_3m": -16.67,
-   "rel_1m_spy": 4.45,
-   "breadth": 25.0,
+   "ret_1d": -8.9,
+   "ret_1w": -17.13,
+   "ret_1m": -6.35,
+   "ret_3m": -26.07,
+   "rel_1m_spy": -1.91,
+   "breadth": 0.0,
    "breadth_3d_ago": 50.0,
-   "dollar_vol_ratio": 0.77,
+   "dollar_vol_ratio": 0.73,
    "quadrant": "Lagging"
   },
   {
@@ -690,14 +691,14 @@
     "RIOT"
    ],
    "insufficient_data": false,
-   "ret_1d": -4.9,
-   "ret_1w": -7.9,
-   "ret_1m": -8.24,
-   "ret_3m": -14.58,
-   "rel_1m_spy": -5.19,
+   "ret_1d": -2.36,
+   "ret_1w": -10.95,
+   "ret_1m": -9.93,
+   "ret_3m": -20.68,
+   "rel_1m_spy": -5.49,
    "breadth": 20.0,
    "breadth_3d_ago": 40.0,
-   "dollar_vol_ratio": 0.86,
+   "dollar_vol_ratio": 0.88,
    "quadrant": "Lagging"
   },
   {
@@ -722,14 +723,14 @@
     "LUNR"
    ],
    "insufficient_data": false,
-   "ret_1d": -8.41,
-   "ret_1w": -9.41,
-   "ret_1m": -5.36,
-   "ret_3m": -41.25,
-   "rel_1m_spy": -2.31,
-   "breadth": 40.0,
-   "breadth_3d_ago": 60.0,
-   "dollar_vol_ratio": 1.06,
+   "ret_1d": -4.19,
+   "ret_1w": -12.58,
+   "ret_1m": -9.14,
+   "ret_3m": -42.04,
+   "rel_1m_spy": -4.7,
+   "breadth": 0.0,
+   "breadth_3d_ago": 40.0,
+   "dollar_vol_ratio": 0.91,
    "quadrant": "Lagging"
   },
   {
@@ -754,15 +755,15 @@
     "BEKE"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.35,
-   "ret_1w": -5.45,
-   "ret_1m": -4.71,
-   "ret_3m": -11.44,
-   "rel_1m_spy": -1.66,
-   "breadth": 40.0,
-   "breadth_3d_ago": 60.0,
-   "dollar_vol_ratio": 1.08,
-   "quadrant": "Improving"
+   "ret_1d": -3.56,
+   "ret_1w": -7.41,
+   "ret_1m": -7.65,
+   "ret_3m": -16.3,
+   "rel_1m_spy": -3.21,
+   "breadth": 20.0,
+   "breadth_3d_ago": 20.0,
+   "dollar_vol_ratio": 1.16,
+   "quadrant": "Lagging"
   },
   {
    "name": "Homebuilders",
@@ -786,13 +787,13 @@
     "NVR"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.36,
-   "ret_1w": -7.02,
-   "ret_1m": 6.91,
-   "ret_3m": -0.38,
-   "rel_1m_spy": 9.96,
-   "breadth": 40.0,
-   "breadth_3d_ago": 80.0,
+   "ret_1d": -1.88,
+   "ret_1w": -5.03,
+   "ret_1m": 7.19,
+   "ret_3m": -5.63,
+   "rel_1m_spy": 11.63,
+   "breadth": 0.0,
+   "breadth_3d_ago": 40.0,
    "dollar_vol_ratio": 0.76,
    "quadrant": "Leading"
   },
@@ -820,15 +821,15 @@
     "RCL"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.03,
-   "ret_1w": -3.68,
-   "ret_1m": 10.3,
-   "ret_3m": 0.63,
-   "rel_1m_spy": 13.35,
-   "breadth": 83.3,
+   "ret_1d": -2.49,
+   "ret_1w": -6.26,
+   "ret_1m": 7.35,
+   "ret_3m": -1.59,
+   "rel_1m_spy": 11.79,
+   "breadth": 50.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.89,
-   "quadrant": "Leading"
+   "dollar_vol_ratio": 0.88,
+   "quadrant": "Weakening"
   },
   {
    "name": "Fintech & Payments",
@@ -852,15 +853,15 @@
     "COF"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.25,
-   "ret_1w": -0.57,
-   "ret_1m": 3.24,
-   "ret_3m": 2.67,
-   "rel_1m_spy": 6.29,
-   "breadth": 60.0,
-   "breadth_3d_ago": 80.0,
-   "dollar_vol_ratio": 0.77,
-   "quadrant": "Leading"
+   "ret_1d": -2.08,
+   "ret_1w": -2.21,
+   "ret_1m": 1.16,
+   "ret_3m": 0.23,
+   "rel_1m_spy": 5.6,
+   "breadth": 40.0,
+   "breadth_3d_ago": 60.0,
+   "dollar_vol_ratio": 0.79,
+   "quadrant": "Weakening"
   },
   {
    "name": "Health Care (XLV)",
@@ -873,14 +874,14 @@
     "XLV"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.51,
-   "ret_1w": -0.24,
-   "ret_1m": 6.32,
-   "ret_3m": 11.12,
-   "rel_1m_spy": 9.37,
+   "ret_1d": -1.41,
+   "ret_1w": -1.93,
+   "ret_1m": 5.46,
+   "ret_3m": 5.85,
+   "rel_1m_spy": 9.9,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.74,
+   "dollar_vol_ratio": 0.78,
    "quadrant": "Weakening"
   },
   {
@@ -894,14 +895,14 @@
     "XLF"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.85,
-   "ret_1w": 0.33,
-   "ret_1m": 4.79,
-   "ret_3m": 0.94,
-   "rel_1m_spy": 7.84,
-   "breadth": 100.0,
+   "ret_1d": -1.91,
+   "ret_1w": -2.09,
+   "ret_1m": 3.65,
+   "ret_3m": -0.36,
+   "rel_1m_spy": 8.09,
+   "breadth": 0.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.89,
+   "dollar_vol_ratio": 0.98,
    "quadrant": "Weakening"
   },
   {
@@ -915,14 +916,14 @@
     "XLI"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.85,
-   "ret_1w": -1.91,
-   "ret_1m": -1.25,
-   "ret_3m": -9.51,
-   "rel_1m_spy": 1.8,
+   "ret_1d": -0.55,
+   "ret_1w": -2.36,
+   "ret_1m": -1.16,
+   "ret_3m": -9.21,
+   "rel_1m_spy": 3.28,
    "breadth": 0.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.78,
+   "dollar_vol_ratio": 0.85,
    "quadrant": "Leading"
   },
   {
@@ -936,15 +937,15 @@
     "XLU"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.18,
-   "ret_1w": 0.75,
-   "ret_1m": 4.52,
-   "ret_3m": 0.96,
-   "rel_1m_spy": 7.57,
+   "ret_1d": -1.59,
+   "ret_1w": -0.71,
+   "ret_1m": 4.98,
+   "ret_3m": -0.64,
+   "rel_1m_spy": 9.42,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.67,
-   "quadrant": "Leading"
+   "dollar_vol_ratio": 0.73,
+   "quadrant": "Weakening"
   },
   {
    "name": "Staples (XLP)",
@@ -957,14 +958,14 @@
     "XLP"
    ],
    "insufficient_data": false,
-   "ret_1d": 0.27,
-   "ret_1w": 1.88,
-   "ret_1m": 5.68,
-   "ret_3m": 8.91,
-   "rel_1m_spy": 8.73,
+   "ret_1d": -1.23,
+   "ret_1w": 0.47,
+   "ret_1m": 4.87,
+   "ret_3m": 6.38,
+   "rel_1m_spy": 9.31,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.84,
+   "dollar_vol_ratio": 0.91,
    "quadrant": "Weakening"
   },
   {
@@ -978,12 +979,12 @@
     "XLRE"
    ],
    "insufficient_data": false,
-   "ret_1d": -0.27,
-   "ret_1w": -0.87,
-   "ret_1m": 4.96,
-   "ret_3m": -0.02,
-   "rel_1m_spy": 8.01,
-   "breadth": 100.0,
+   "ret_1d": -1.49,
+   "ret_1w": -2.22,
+   "ret_1m": 4.61,
+   "ret_3m": -2.3,
+   "rel_1m_spy": 9.05,
+   "breadth": 0.0,
    "breadth_3d_ago": 100.0,
    "dollar_vol_ratio": 0.7,
    "quadrant": "Leading"
@@ -999,14 +1000,14 @@
     "XLB"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.46,
-   "ret_1w": -2.78,
-   "ret_1m": 1.08,
-   "ret_3m": -0.14,
-   "rel_1m_spy": 4.13,
+   "ret_1d": -1.22,
+   "ret_1w": -3.8,
+   "ret_1m": -0.22,
+   "ret_3m": -2.75,
+   "rel_1m_spy": 4.22,
    "breadth": 0.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.74,
+   "dollar_vol_ratio": 0.8,
    "quadrant": "Weakening"
   },
   {
@@ -1020,14 +1021,14 @@
     "XLY"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.53,
-   "ret_1w": -2.36,
-   "ret_1m": 5.06,
-   "ret_3m": 1.76,
-   "rel_1m_spy": 8.11,
-   "breadth": 100.0,
+   "ret_1d": -0.89,
+   "ret_1w": -3.26,
+   "ret_1m": 2.31,
+   "ret_3m": -1.04,
+   "rel_1m_spy": 6.75,
+   "breadth": 0.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.85,
+   "dollar_vol_ratio": 0.86,
    "quadrant": "Weakening"
   },
   {
@@ -1041,15 +1042,15 @@
     "XLC"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.72,
-   "ret_1w": -0.5,
-   "ret_1m": -3.17,
-   "ret_3m": -2.99,
-   "rel_1m_spy": -0.12,
+   "ret_1d": -1.46,
+   "ret_1w": -2.32,
+   "ret_1m": -4.39,
+   "ret_3m": -5.13,
+   "rel_1m_spy": 0.05,
    "breadth": 100.0,
    "breadth_3d_ago": 100.0,
-   "dollar_vol_ratio": 0.73,
-   "quadrant": "Leading"
+   "dollar_vol_ratio": 0.76,
+   "quadrant": "Weakening"
   },
   {
    "name": "Energy (XLE)",
@@ -1062,15 +1063,15 @@
     "XLE"
    ],
    "insufficient_data": false,
-   "ret_1d": -1.96,
-   "ret_1w": 2.83,
-   "ret_1m": -6.67,
-   "ret_3m": 0.61,
-   "rel_1m_spy": -3.62,
+   "ret_1d": -0.52,
+   "ret_1w": 1.85,
+   "ret_1m": -6.55,
+   "ret_3m": 0.25,
+   "rel_1m_spy": -2.11,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.71,
-   "quadrant": "Weakening"
+   "dollar_vol_ratio": 0.68,
+   "quadrant": "Leading"
   },
   {
    "name": "Tech (XLK)",
@@ -1083,21 +1084,21 @@
     "XLK"
    ],
    "insufficient_data": false,
-   "ret_1d": -3.24,
-   "ret_1w": -3.58,
-   "ret_1m": -10.2,
-   "ret_3m": -11.13,
-   "rel_1m_spy": -7.15,
+   "ret_1d": -0.91,
+   "ret_1w": -3.34,
+   "ret_1m": -12.21,
+   "ret_3m": -10.99,
+   "rel_1m_spy": -7.77,
    "breadth": 0.0,
    "breadth_3d_ago": 0.0,
-   "dollar_vol_ratio": 0.9,
+   "dollar_vol_ratio": 0.97,
    "quadrant": "Improving"
   }
  ],
  "rrg": {
   "Semiconductors": [
    [
-    101.74,
+    101.75,
     100.26
    ],
    [
@@ -1105,46 +1106,46 @@
     98.52
    ],
    [
-    99.42,
+    99.41,
     98.16
    ],
    [
     99.36,
-    99.91
+    99.92
    ],
    [
-    98.44,
-    98.79
+    98.45,
+    98.81
    ],
    [
-    97.85,
+    97.86,
     99.25
    ],
    [
-    98.62,
+    98.64,
     101.1
    ],
    [
-    98.59,
-    100.01
+    98.65,
+    100.07
    ]
   ],
   "Semi Equip & Memory": [
    [
-    100.14,
-    100.57
+    100.15,
+    100.6
    ],
    [
-    98.96,
+    98.97,
     98.12
    ],
    [
     97.17,
-    97.84
+    97.83
    ],
    [
     97.76,
-    101.03
+    101.02
    ],
    [
     98.45,
@@ -1152,21 +1153,21 @@
    ],
    [
     97.59,
-    99.08
+    99.09
    ],
    [
     98.47,
     101.14
    ],
    [
-    98.49,
-    100.15
+    98.53,
+    100.2
    ]
   ],
   "Software": [
    [
-    101.05,
-    100.25
+    101.06,
+    100.26
    ],
    [
     101.22,
@@ -1174,7 +1175,7 @@
    ],
    [
     100.73,
-    98.89
+    98.88
    ],
    [
     101.11,
@@ -1182,53 +1183,53 @@
    ],
    [
     100.19,
-    98.34
+    98.35
    ],
    [
     99.33,
     98.62
    ],
    [
-    99.04,
+    99.05,
     99.67
    ],
    [
-    98.86,
-    99.9
+    98.22,
+    98.85
    ]
   ],
   "Mag 7": [
    [
-    101.53,
+    101.54,
     99.21
    ],
    [
-    101.42,
-    99.47
+    101.43,
+    99.46
    ],
    [
     100.87,
     98.83
    ],
    [
-    100.27,
-    98.91
+    100.26,
+    98.89
    ],
    [
-    99.07,
-    97.89
+    99.05,
+    97.88
    ],
    [
     99.61,
-    100.91
+    100.93
    ],
    [
-    99.25,
-    99.39
+    99.23,
+    99.37
    ],
    [
-    98.82,
-    99.3
+    98.93,
+    99.51
    ]
   ],
   "Cybersecurity": [
@@ -1249,98 +1250,98 @@
     101.25
    ],
    [
-    100.59,
+    100.58,
     99.05
    ],
    [
-    99.16,
+    99.15,
     98.64
    ],
    [
-    99.33,
+    99.32,
     100.32
    ],
    [
-    99.31,
-    100.12
+    99.25,
+    100.08
    ]
   ],
   "Genomics": [
    [
-    102.11,
-    100.36
+    102.12,
+    100.33
    ],
    [
     101.32,
-    99.16
+    99.14
    ],
    [
-    100.05,
-    98.59
+    100.06,
+    98.6
    ],
    [
-    100.43,
+    100.45,
     100.43
    ],
    [
     100.97,
-    100.54
+    100.53
    ],
    [
     99.8,
     98.73
    ],
    [
-    98.48,
-    98.78
+    98.51,
+    98.8
    ],
    [
-    98.21,
-    99.87
+    98.39,
+    100.01
    ]
   ],
   "Biotech Large": [
    [
-    99.83,
-    98.59
+    99.97,
+    98.6
    ],
    [
-    100.06,
-    100.36
+    100.26,
+    100.45
    ],
    [
-    101.08,
-    101.31
+    101.41,
+    101.41
    ],
    [
-    101.43,
-    100.44
+    101.97,
+    100.7
    ],
    [
-    102.69,
-    101.5
+    102.66,
+    100.79
    ],
    [
-    102.13,
-    99.19
+    102.11,
+    99.15
    ],
    [
-    101.63,
-    99.33
+    101.64,
+    99.3
    ],
    [
-    101.56,
-    99.92
+    101.68,
+    100.04
    ]
   ],
   "Pharma & Managed Care": [
    [
-    99.3,
-    98.53
+    99.31,
+    98.54
    ],
    [
     99.95,
-    101.1
+    101.09
    ],
    [
     101.87,
@@ -1351,20 +1352,20 @@
     100.16
    ],
    [
-    102.43,
+    102.42,
     100.34
    ],
    [
-    102.0,
-    99.38
+    101.99,
+    99.39
    ],
    [
     101.64,
-    99.45
+    99.44
    ],
    [
-    101.62,
-    99.85
+    101.5,
+    99.73
    ]
   ],
   "Defense": [
@@ -1381,12 +1382,12 @@
     101.0
    ],
    [
-    100.1,
+    100.11,
     100.47
    ],
    [
     101.09,
-    101.35
+    101.34
    ],
    [
     100.47,
@@ -1397,26 +1398,26 @@
     100.51
    ],
    [
-    100.98,
-    100.21
+    101.23,
+    100.5
    ]
   ],
   "Energy": [
    [
     100.01,
-    99.71
+    99.7
    ],
    [
-    100.27,
-    100.17
+    100.26,
+    100.16
    ],
    [
-    101.91,
+    101.9,
     101.7
    ],
    [
     102.26,
-    100.2
+    100.22
    ],
    [
     102.06,
@@ -1424,15 +1425,15 @@
    ],
    [
     100.53,
-    98.25
+    98.24
    ],
    [
     100.71,
-    100.12
+    100.11
    ],
    [
-    100.66,
-    99.92
+    100.71,
+    99.98
    ]
   ],
   "Banks & Brokers": [
@@ -1457,7 +1458,7 @@
     100.71
    ],
    [
-    99.36,
+    99.35,
     100.52
    ],
    [
@@ -1465,22 +1466,22 @@
     100.43
    ],
    [
-    99.73,
-    100.1
+    99.6,
+    99.97
    ]
   ],
   "Staples": [
    [
-    98.12,
+    98.11,
     98.97
    ],
    [
-    99.21,
-    102.09
+    99.2,
+    102.08
    ],
    [
     102.22,
-    102.94
+    102.95
    ],
    [
     102.18,
@@ -1492,7 +1493,7 @@
    ],
    [
     102.44,
-    100.08
+    100.09
    ],
    [
     101.96,
@@ -1500,7 +1501,7 @@
    ],
    [
     101.88,
-    99.68
+    99.67
    ]
   ],
   "Utilities & Power": [
@@ -1509,32 +1510,32 @@
     100.5
    ],
    [
-    99.6,
-    101.28
+    99.58,
+    101.26
    ],
    [
-    100.04,
-    100.44
+    100.03,
+    100.46
    ],
    [
-    100.04,
-    99.95
+    100.06,
+    99.97
    ],
    [
-    100.89,
+    100.91,
     101.03
    ],
    [
+    101.39,
+    100.46
+   ],
+   [
     101.35,
-    100.43
+    99.45
    ],
    [
-    101.34,
-    99.51
-   ],
-   [
-    101.72,
-    100.31
+    101.62,
+    100.1
    ]
   ],
   "Materials": [
@@ -1543,8 +1544,8 @@
     99.99
    ],
    [
-    99.09,
-    100.76
+    99.08,
+    100.77
    ],
    [
     100.57,
@@ -1560,15 +1561,15 @@
    ],
    [
     100.4,
-    98.97
+    98.96
    ],
    [
     100.23,
     99.9
    ],
    [
-    100.41,
-    100.29
+    100.43,
+    100.3
    ]
   ],
   "Copper": [
@@ -1578,7 +1579,7 @@
    ],
    [
     100.37,
-    99.44
+    99.43
    ],
    [
     99.64,
@@ -1597,34 +1598,34 @@
     100.14
    ],
    [
-    98.37,
+    98.38,
     100.3
    ],
    [
-    98.22,
-    99.98
+    98.3,
+    100.08
    ]
   ],
   "AI Infra & Data Center": [
    [
-    101.36,
-    100.64
+    101.33,
+    100.67
    ],
    [
-    101.93,
-    100.34
+    101.92,
+    100.36
    ],
    [
-    97.98,
-    97.45
+    97.94,
+    97.42
    ],
    [
-    98.08,
-    100.07
+    98.06,
+    100.08
    ],
    [
     98.48,
-    100.34
+    100.35
    ],
    [
     97.61,
@@ -1635,26 +1636,26 @@
     100.69
    ],
    [
-    98.42,
-    100.09
+    98.52,
+    100.15
    ]
   ],
   "Quantum": [
    [
-    99.42,
+    99.41,
     99.02
    ],
    [
-    98.63,
-    98.59
+    98.62,
+    98.6
    ],
    [
     97.78,
-    98.51
+    98.53
    ],
    [
     98.17,
-    100.8
+    100.81
    ],
    [
     98.29,
@@ -1669,42 +1670,42 @@
     99.26
    ],
    [
-    98.42,
-    100.22
+    98.28,
+    99.95
    ]
   ],
   "Nuclear & Uranium": [
    [
-    98.07,
-    99.54
+    98.08,
+    99.53
    ],
    [
     98.45,
-    101.2
+    101.21
    ],
    [
-    97.95,
+    97.96,
     98.65
    ],
    [
     98.03,
-    100.27
+    100.26
    ],
    [
     98.41,
     101.18
    ],
    [
-    98.48,
-    100.25
+    98.47,
+    100.23
    ],
    [
     98.58,
     100.51
    ],
    [
-    98.59,
-    100.16
+    98.57,
+    100.11
    ]
   ],
   "Gold Miners": [
@@ -1714,10 +1715,10 @@
    ],
    [
     99.94,
-    99.75
+    99.74
    ],
    [
-    99.9,
+    99.89,
     99.8
    ],
    [
@@ -1725,26 +1726,26 @@
     98.76
    ],
    [
-    98.69,
+    98.68,
     99.54
    ],
    [
-    100.08,
+    100.07,
     101.61
    ],
    [
-    98.99,
-    98.67
+    98.98,
+    98.68
    ],
    [
-    98.91,
-    100.13
+    99.11,
+    100.4
    ]
   ],
   "Solar": [
    [
     98.69,
-    100.94
+    100.95
    ],
    [
     98.79,
@@ -1760,53 +1761,53 @@
    ],
    [
     98.77,
-    99.47
+    99.48
    ],
    [
     101.11,
-    103.29
+    103.28
    ],
    [
-    99.75,
+    99.76,
     98.15
    ],
    [
-    99.5,
-    99.61
+    98.63,
+    98.65
    ]
   ],
   "Crypto-linked": [
    [
-    100.09,
-    99.07
+    100.12,
+    99.08
    ],
    [
-    99.01,
+    99.04,
     98.86
    ],
    [
-    98.18,
-    99.16
-   ],
-   [
     98.2,
-    100.02
+    99.14
    ],
    [
-    98.27,
-    100.19
+    98.22,
+    100.01
+   ],
+   [
+    98.28,
+    100.18
    ],
    [
     98.98,
-    100.91
+    100.89
    ],
    [
     98.96,
     99.92
    ],
    [
-    98.9,
-    99.86
+    98.83,
+    99.78
    ]
   ],
   "Space & Drones": [
@@ -1816,10 +1817,10 @@
    ],
    [
     98.64,
-    98.28
+    98.29
    ],
    [
-    97.88,
+    97.89,
     98.21
    ],
    [
@@ -1839,21 +1840,21 @@
     101.27
    ],
    [
-    98.82,
-    99.51
+    98.68,
+    99.2
    ]
   ],
   "China Tech ADR": [
    [
-    98.24,
-    99.73
+    98.23,
+    99.74
    ],
    [
-    98.96,
+    98.97,
     101.47
    ],
    [
-    99.14,
+    99.15,
     100.4
    ],
    [
@@ -1866,15 +1867,15 @@
    ],
    [
     100.74,
-    102.71
+    102.7
    ],
    [
     99.25,
     98.12
    ],
    [
-    99.46,
-    100.27
+    99.0,
+    99.7
    ]
   ],
   "Homebuilders": [
@@ -1907,8 +1908,8 @@
     98.05
    ],
    [
-    100.9,
-    100.25
+    100.74,
+    100.05
    ]
   ],
   "Travel & Airlines": [
@@ -1921,7 +1922,7 @@
     100.09
    ],
    [
-    99.09,
+    99.1,
     100.78
    ],
    [
@@ -1941,17 +1942,17 @@
     99.07
    ],
    [
-    101.66,
-    100.25
+    101.44,
+    99.97
    ]
   ],
   "Fintech & Payments": [
    [
-    98.01,
-    99.37
+    98.0,
+    99.39
    ],
    [
-    99.23,
+    99.22,
     101.97
    ],
    [
@@ -1959,7 +1960,7 @@
     101.92
    ],
    [
-    101.12,
+    101.11,
     100.56
    ],
    [
@@ -1967,7 +1968,7 @@
     100.62
    ],
    [
-    102.23,
+    102.22,
     100.85
    ],
    [
@@ -1975,8 +1976,8 @@
     98.74
    ],
    [
-    101.46,
-    100.18
+    101.26,
+    99.94
    ]
   ],
   "Health Care (XLV)": [
@@ -2009,8 +2010,8 @@
     99.34
    ],
    [
-    101.66,
-    99.82
+    101.61,
+    99.76
    ]
   ],
   "Financials (XLF)": [
@@ -2043,8 +2044,8 @@
     99.61
    ],
    [
-    101.57,
-    99.98
+    101.37,
+    99.75
    ]
   ],
   "Industrials (XLI)": [
@@ -2077,8 +2078,8 @@
     101.04
    ],
    [
-    100.11,
-    100.5
+    100.3,
+    100.88
    ]
   ],
   "Utilities (XLU)": [
@@ -2111,8 +2112,8 @@
     98.64
    ],
    [
-    101.66,
-    100.12
+    101.55,
+    99.89
    ]
   ],
   "Staples (XLP)": [
@@ -2145,8 +2146,8 @@
     99.13
    ],
    [
-    101.78,
-    99.77
+    101.75,
+    99.74
    ]
   ],
   "Real Estate (XLRE)": [
@@ -2179,8 +2180,8 @@
     98.64
    ],
    [
-    101.46,
-    100.24
+    101.36,
+    100.07
    ]
   ],
   "Materials (XLB)": [
@@ -2213,8 +2214,8 @@
     99.17
    ],
    [
-    100.89,
-    99.92
+    100.84,
+    99.86
    ]
   ],
   "Cons Discret (XLY)": [
@@ -2247,8 +2248,8 @@
     99.14
    ],
    [
-    101.54,
-    99.41
+    101.57,
+    99.45
    ]
   ],
   "Comm Svcs (XLC)": [
@@ -2281,8 +2282,8 @@
     100.23
    ],
    [
-    100.24,
-    100.02
+    100.09,
+    99.91
    ]
   ],
   "Energy (XLE)": [
@@ -2315,8 +2316,8 @@
     100.35
    ],
    [
-    100.28,
-    99.92
+    100.38,
+    100.06
    ]
   ],
   "Tech (XLK)": [
@@ -2349,15 +2350,13 @@
     100.82
    ],
    [
-    98.35,
-    100.23
+    98.37,
+    100.25
    ]
   ]
  },
  "data_quality": {
-  "failed_tickers": [
-   "BIIB"
-  ],
+  "failed_tickers": [],
   "themes_flagged_insufficient": []
  }
 }
